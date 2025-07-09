@@ -1,0 +1,147 @@
+.thirdPart {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 100px;
+    padding: 7px;
+  }
+  
+  .containerMyWork {
+    display: grid;
+    gap: 7px;
+    grid-auto-rows: minmax(0, 1fr);
+    grid-template-columns: repeat(3, minmax(50px, 1fr));
+    height: min-content;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+    width: 100%;
+  }
+  
+  .myWork a {
+    display: block; /* Asegura que el enlace ocupe todo el contenedor */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+    color: inherit; /* Hereda el color del texto (si aplica) */
+    width: 100%;
+    height: 100%;
+    border-radius: 20px; /* Mantiene el borde redondeado del .myWork */
+    position: relative; /* Permite que los elementos hijos (como ::after) se posicionen correctamente */
+  }
+  
+  .myWork a:hover::after,
+  .myWork a:hover .textMyWork,
+  .myWork a:hover .workBtn {
+    /* Asegura que los efectos hover funcionen con el enlace */
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  
+  .myWork a:focus {
+    outline: none; /* Elimina el contorno predeterminado */
+  }
+  
+  .myWork a {
+    touch-action: manipulation;
+  }
+  
+  .myWork {
+    align-self: self-start;
+    justify-self: start;
+    aspect-ratio: 1.2 / 1;
+    flex: none;
+    position: relative;
+    width: 100%;
+    min-height: 327px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .myWork::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    border-radius: 20px;
+  }
+  
+  .myWork:hover::after {
+    opacity: 1;
+  }
+  
+  .myWork img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .textMyWork {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    z-index: 2;
+  }
+  
+  .myWork:hover .textMyWork {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  h5 {
+    font-family: var(--font-second);
+    font-size: 1.7rem;
+    color: var(--second);
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .textMyWork small {
+    font-size: 1.1rem;
+    color: var(--second);
+  }
+  
+  .workTopBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 3;
+  }
+  
+  .workBtn {
+    width: 42px;
+    height: 42px;
+    background: var(--second);
+    border: 2px solid var(--second);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(0.95);
+    text-decoration: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .myWork:hover .workBtn {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .workBtn i {
+    color: var(--background);
+    font-size: 24px;
+  }

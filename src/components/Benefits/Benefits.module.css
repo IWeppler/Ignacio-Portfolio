@@ -1,0 +1,123 @@
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fourthPart {
+  max-width: 1000px;
+  margin: 4rem auto 12rem auto;
+}
+
+.benefits {
+  background: var(--complementario);
+  padding: 2rem;
+  border-radius: 12px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+.benefits.visible {
+  animation: fadeUp 0.6s ease forwards;
+  animation-delay: var(--delay, 0s); /* permite usar CSS variables */
+}
+
+/* Agregar un poco de dinamismo al pasar el mouse */
+.benefits:hover {
+  transform: translateY(10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.benefits:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.benefits:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.benefits:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.icon {
+  color: #65fe51;
+  margin-bottom: 1.5rem;
+}
+
+.benefits h4 {
+  color: var(--second);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.benefits p {
+  color: var(--textColor);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.containerWrapper {
+  min-height: 50vh;
+  padding: 0.5rem 0;
+  margin: 0px 7px;
+}
+
+.wrapperBenefits {
+  display: flex;
+  gap: 1rem;
+  flex: wrap;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+}
+
+.wrapperBenefits .benefits {
+  flex: 1 1 calc(33.33% - 0.667rem);
+  max-width: calc(33.33% - 0.665rem);
+}
+
+/* 2 columnas abajo */
+.wrapperBenefitsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.wrapperBenefitsRow .benefits {
+  flex: 1 1 calc(50% - 0.5rem);
+  max-width: calc(50% - 0.5rem);
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .wrapperBenefits .benefits {
+    flex: 1 1 calc(50% - 0.5rem);
+    max-width: calc(50% - 0.5rem);
+  }
+
+  .wrapperBenefitsRow .benefits {
+    flex: 1 1 calc(50% - 0.5rem);
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .wrapperBenefits,
+  .wrapperBenefitsRow {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wrapperBenefits .benefits,
+  .wrapperBenefitsRow .benefits {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}

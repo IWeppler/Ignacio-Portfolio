@@ -1,0 +1,35 @@
+---
+import {ClientRouter} from "astro:transitions"
+import SEO from "../components/SEO.astro";
+
+const {
+  title = "Ignacio Weppler - Portfolio",
+  description = "Portfolio de Ignacio Weppler, desarrollador Web Full Stack con enfoque en Frontend.",
+  url,
+  image,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+
+    <SEO title={title} description={description} url={url} image={image} />
+
+    <!-- Favicon, fuentes e íconos -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link href="/src/styles/global.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Syne:wght@400..800&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  </head>
+	<body>
+		<ClientRouter/>
+		<slot />
+	</body>
+</html>

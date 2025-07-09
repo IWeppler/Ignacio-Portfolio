@@ -1,0 +1,34 @@
+---
+import Navbar from '../components/Navbar/Navbar.astro';
+import Footer from '../components/Footer/Footer.astro';
+import Layout from '../layouts/Layout.astro';
+import tres from "../assets/tres.png";
+---
+
+<Layout
+  title="Ñekurel - Proyecto | Ignacio Weppler"
+  description="Aplicación POS para vivero Ñekurel. Aplicación de ventas para el sistema de ventas del vivero Ñekurel."
+  url="https://ignacioweppler.dev/proyecto3"
+  image={tres.src}
+>
+	<Navbar />
+    <section class="containProject">
+        <div class="contain-titlesProject">
+            <div class="titlesProject">
+                <small> Segundo Proyecto</small>
+                <h1> Ñekurel POS</h1>
+                <p>Simplificando la búsqueda en el mundo de las plantas</p>
+            </div>
+        </div>
+        <div class="contain-bodyProject">
+            <div class="bodyProject">
+                <p>El vivero Ñekurel necesitaba una solución eficiente que facilitara a sus clientes encontrar el producto o planta que buscaban de forma rápida y sin complicaciones.</p>
+                <img src={tres.src} alt="Vista previa del Proyecto Nekurel que realizo Ignacio, desarrollador freelancer argentino">
+                <p>Diseñé una landing page con un buscador funcional que permite visualizar, en cuestión de segundos, el stock, la imagen y el precio de cada producto. Esta herramienta, aunque sencilla y sin necesidad de una base de datos compleja, cumple con el objetivo de agilizar la experiencia del usuario al ofrecer información clara y ordenada.</p>
+                <br>
+                <p>De esta manera, Ñekurel pudo optimizar su proceso de ventas y mejorar la experiencia de sus clientes, conectando el amor por la naturaleza con una solución tecnológica eficaz.</p>                
+            </div>
+        </div>
+    </section>
+	<Footer/>
+</Layout>

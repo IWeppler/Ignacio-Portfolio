@@ -1,0 +1,79 @@
+.firstPart {
+  min-height: 100vh;
+  width: 70%;
+  margin: auto;
+  padding: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  color: var(--second);
+  font-family: var(--font-second);
+  font-weight: 700;
+  font-size: 37px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.containerServices {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+.containerServices p {
+  color: var(--textColor);
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.spanAboutMe {
+  color: var(--second);
+  font-weight: 400;
+  font-style: italic;
+}
+
+.spanAboutMeCTA {
+  color: var(--second);
+  font-weight: 400;
+  font-style: italic;
+}
+
+.spanAboutMeCTA:hover {
+  color: var(--mainColor);
+  text-decoration: underline;
+}
+
+.wrapperIcons {
+  margin-top: 7rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem; /* por claridad */
+}
+
+.wrapperIcons i {
+  aspect-ratio: 1/1.2;
+  padding: 5px;
+  font-size: 3.2rem;
+  color: var(--first);
+  transition: color 0.4s ease, transform 0.8s ease;
+}
+
+/* Cuando hay hover en algún ícono */
+/* .wrapperIcons:hover i {
+  color: var(--first);
+  opacity: 0.5;
+} */
+
+/* Ícono específico que recibe hover */
+.wrapperIcons i:hover {
+  color: var(--second);
+  opacity: 1;
+  z-index: 1;
+}

@@ -1,0 +1,61 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar/Navbar.astro";
+import Footer from "../components/Footer/Footer.astro";
+import cuatro from "../assets/cuatro.png";
+---
+
+<Layout
+  title="Beta & Omega - Proyecto | Ignacio Weppler"
+  description="Aplicación estudiantil Beta & Omega. Aplicación para cursos, estudiantes."
+  url="https://ignacioweppler.dev/proyecto1"
+  image={cuatro.src}
+>
+  <Navbar />
+  <section class="containProject" transition:animate="fade">
+    <div class="contain-titlesProject">
+      <div class="titlesProject">
+        <small transition:animate="fade">Cuarto Proyecto</small>
+        <h1 transition:animate="fade">Beta & Omega</h1>
+        <p transition:animate="fade">YHWH en la era digital</p>
+      </div>
+    </div>
+    <div class="contain-bodyProject">
+      <div class="bodyProject">
+        <p>
+          El grupo espiritual Beta & Omega tenía como objetivo modernizar la
+          forma en la que se conectan con su comunidad, compartiendo sus
+          enseñanzas de manera más accesible y ordenada. El desafío fue crear
+          una plataforma digital intuitiva y funcional que no solo reflejara los
+          valores del grupo, sino que también facilitara la participación activa
+          de los usuarios interesados en sus cursos.
+        </p>
+        <img
+          src={cuatro.src}
+          alt="Vista previa del proyecto Beta y Omega que realizo Ignacio, desarrollador freelancer argentino"
+        />
+        <p>
+          El resultado fue una página web dinámica que actúa como un puente
+          entre la espiritualidad y la tecnología. La plataforma presenta un
+          catálogo de cursos organizados de forma clara y visual, donde cada
+          usuario puede explorar las propuestas, conocer los detalles del
+          contenido ofrecido y suscribirse de manera sencilla con tan solo unos
+          clics. Además, el diseño se enfocó en lograr una navegación amigable,
+          priorizando la simplicidad y la experiencia del usuario.
+        </p>
+        <br />
+        <p>
+          Gracias a esta solución digital, Beta & Omega pudo ampliar su alcance
+          más allá de las limitaciones físicas, conectando con personas de
+          diversas regiones y ofreciendo una experiencia moderna, accesible y
+          adaptada a las necesidades del mundo actual.
+        </p>
+        <img
+          src={cuatro.src}
+          alt="Vista previa del proyecto Beta y Omega que realizo Ignacio, desarrollador freelancer argentino"
+        />
+      </div>
+    </div>
+  </section>
+  <Footer />
+</Layout>

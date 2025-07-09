@@ -1,0 +1,51 @@
+---
+import uno from "../../assets/uno.png";
+import dos from "../../assets/dos.png";
+import tres from "../../assets/tres.png";
+import cuatro from "../../assets/cuatro.png";
+
+const nombres = ["Beta & Omega", "Ñekurel", "Club Atletico Tostado", "El Trampozo", "Beta & Omega", "Henry Projects"];
+const imagenes = [uno, cuatro, tres, dos, dos, dos];
+---
+
+<section id="proyectos" class="flex flex-col items-center w-full p-4 mb-24" style="padding: 8px;">
+  <div class="mb-6">
+    <h3 class="text-3xl font-bold text-white">Trabajos</h3>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 p-4">
+    {nombres.map((nombre, i) => (
+      <div>
+        <a href={`/Proyecto${i + 1}`}>
+          <div class="relative w-full aspect-[1.2/1] min-h-[327px] rounded-2xl overflow-hidden cursor-pointer group">
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black/70 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-400 rounded-2xl z-10"></div>
+
+            <!-- Top Button -->
+            <div class="absolute top-3 right-3 z-20 opacity-0 group-hover:opacity-100 transform group-hover:scale-100 scale-95 transition duration-300">
+              <div class="w-[42px] h-[42px] bg-[var(--second)] border-2 border-[var(--second)] rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transform group-hover:scale-100 scale-95 transition duration-300">
+                <i class="ri-arrow-right-up-line text-[var(--background)] text-xl"></i>
+              </div>
+            </div>
+
+            <!-- Image -->
+            <img
+              src={imagenes[i].src}
+              alt={`proyecto ${nombre}`}
+              loading="lazy"
+              class="w-full h-full object-cover rounded-2xl"
+            />
+
+            <!-- Text Overlay -->
+            <div class="absolute bottom-5 left-5 opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2 transition duration-400 z-20">
+              <h5 class="text-[1.7rem] font-semibold text-[var(--second)] mb-2">
+                {nombre}
+              </h5>
+              <small class="text-[1.1rem] text-[var(--second)]">Proyecto {i + 1}</small>
+            </div>
+          </div>
+        </a>
+      </div>
+    ))}
+  </div>
+</section>

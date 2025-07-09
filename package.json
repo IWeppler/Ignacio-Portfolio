@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@lucide/astro": "^0.513.0",
+    "@shikijs/engine-javascript": "^3.4.0",
+    "@tailwindcss/vite": "^4.1.5",
+    "astro": "^5.7.10",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "gsap": "^3.13.0",
+    "tailwind-merge": "^3.3.0",
+    "tailwindcss": "^4.1.5"
+  },
+  "devDependencies": {
+    "tw-animate-css": "^1.3.4"
+  }
+}

@@ -1,0 +1,29 @@
+---
+const {
+  title = "Ignacio Weppler - Desarrollador Web",
+  description = "Portfolio de Ignacio Weppler, desarrollador web Full Stack con orientación al Frontend. Experiencia en React, Next.js, Tailwind y Astro.",
+  url = "https://ignacioweppler.vercel.dev",
+  image = "/og-image.png",
+} = Astro.props;
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<meta name="author" content="Ignacio Weppler" />
+<meta name="keywords" content="Ignacio Weppler, Portfolio, Desarrollador Web, Full Stack, Frontend, React, Next.js, Astro, Tailwind" />
+
+<!-- Open Graph -->
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:type" content="website" />
+<meta property="og:url" content={url} />
+<meta property="og:image" content={image} />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={image} />
+
+<!-- Canonical URL -->
+<link rel="canonical" href={url} />

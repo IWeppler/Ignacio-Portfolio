@@ -1,0 +1,62 @@
+.bannerContainer {
+  overflow: hidden;
+  background: var(--background);
+  color: var(--second);
+  height: 10vh;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.bannerContainer::before,
+.bannerContainer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.bannerContainer::before {
+  left: 0;
+  background: linear-gradient(to right, var(--background) 0%, transparent 100%);
+}
+
+.bannerContainer::after {
+  right: 0;
+  background: linear-gradient(to left, var(--background) 0%, transparent 100%);
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: scroll 80s linear infinite;
+  gap: 40px;
+}
+
+.word {
+  white-space: nowrap;
+  font-size: 1.1rem;
+  letter-spacing: 0.3rem;
+  font-weight: 300;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
