@@ -9,9 +9,11 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.4.1",
     "@lucide/astro": "^0.513.0",
     "@shikijs/engine-javascript": "^3.4.0",
     "@tailwindcss/vite": "^4.1.5",
+    "@vercel/analytics": "^1.5.0",
     "astro": "^5.7.10",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
