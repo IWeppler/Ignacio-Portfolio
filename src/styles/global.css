@@ -205,64 +205,6 @@ body {
 }
 
 @media (max-width: 500px) {
-  .hamburger {
-    display: block;
-    grid-column-start: 3;
-  }
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-
-  header {
-    transition: 0.2s;
-    justify-content: flex-end;
-  }
-
-  header nav {
-    position: absolute;
-    top: 100%;
-    width: 100vw;
-    right: 100%;
-    height: 100vh;
-    border: none;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    transition: 0.55s ease-in-out;
-  }
-
-  nav.active {
-    right: 0;
-  }
-
-  nav a {
-    display: block;
-    width: 100vw;
-    text-align: center;
-    color: var(--second);
-    padding: 20px 0;
-    margin: 25px 0;
-    font-size: 30px;
-  }
-
-  header .navbar li a {
-    padding: 20px;
-  }
-  nav a:hover {
-    border-bottom: none;
-    color: var(--mainColor);
-  }
-
-  h1 {
-    color: red;
-  }
 
   .subMain h1 {
     font-size: 80px;
