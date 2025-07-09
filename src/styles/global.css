@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Syne:wght@400..800&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -84,6 +85,7 @@ body {
   border-bottom: 1px solid var(--first);
   width: 100%;
 }
+
 .titlesProject small {
   text-transform: uppercase;
   font-size: 14px;
