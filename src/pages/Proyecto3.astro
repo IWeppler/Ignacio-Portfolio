@@ -1,34 +1,98 @@
 ---
-import Navbar from '../components/Navbar/Navbar.astro';
-import Footer from '../components/Footer/Footer.astro';
-import Layout from '../layouts/Layout.astro';
-import tres from "../assets/tres.png";
+import Navbar from "../components/Navbar/Navbar.astro";
+import Footer from "../components/Footer/Footer.astro";
+import Layout from "../layouts/Layout.astro";
+import modulo4Henry from "../assets/modulo4Henry.png";
+import modulo4Henryb from "../assets/modulo4Henryb.png";
 ---
 
 <Layout
-  title="Ñekurel - Proyecto | Ignacio Weppler"
-  description="Aplicación POS para vivero Ñekurel. Aplicación de ventas para el sistema de ventas del vivero Ñekurel."
+  title="Ecommerce Apple - Proyecto | Ignacio Weppler"
+  description="Proyecto individual desarrollado por Ignacio Weppler: un ecommerce de productos Apple con autenticación, validaciones y lógica de usuario."
   url="https://ignacioweppler.vercel.app/proyecto3"
-  image={tres.src}
+  image={modulo4Henry.src}
 >
-	<Navbar />
-    <section class="containProject">
-        <div class="contain-titlesProject">
-            <div class="titlesProject">
-                <small> Segundo Proyecto</small>
-                <h1> Ñekurel POS</h1>
-                <p>Simplificando la búsqueda en el mundo de las plantas</p>
-            </div>
-        </div>
-        <div class="contain-bodyProject">
-            <div class="bodyProject">
-                <p>El vivero Ñekurel necesitaba una solución eficiente que facilitara a sus clientes encontrar el producto o planta que buscaban de forma rápida y sin complicaciones.</p>
-                <img src={tres.src} alt="Vista previa del Proyecto Nekurel que realizo Ignacio, desarrollador freelancer argentino">
-                <p>Diseñé una landing page con un buscador funcional que permite visualizar, en cuestión de segundos, el stock, la imagen y el precio de cada producto. Esta herramienta, aunque sencilla y sin necesidad de una base de datos compleja, cumple con el objetivo de agilizar la experiencia del usuario al ofrecer información clara y ordenada.</p>
-                <br>
-                <p>De esta manera, Ñekurel pudo optimizar su proceso de ventas y mejorar la experiencia de sus clientes, conectando el amor por la naturaleza con una solución tecnológica eficaz.</p>                
-            </div>
-        </div>
-    </section>
-	<Footer/>
+  <Navbar />
+  <section class="containProject">
+    <div class="contain-titlesProject">
+      <div class="titlesProject">
+        <small> Proyecto 3 - Bootcamp Soy Henry</small>
+        <h1>Ecommerce Apple</h1>
+        <p>Tienda de productos Apple con autenticación y lógica de usuario.</p>
+      </div>
+    </div>
+    <div class="contain-bodyProject">
+      <div class="bodyProject">
+        <p>
+          Este fue un <strong>proyecto individual</strong> desarrollado durante el
+          último módulo del bootcamp de Soy Henry. Se trata de un ecommerce especializado
+          en productos Apple, donde los usuarios deben registrarse o iniciar sesión
+          para poder completar una compra.
+        </p>
+
+        <img
+          src={modulo4Henry.src}
+          alt="Vista previa del Ecommerce de productos Apple desarrollado por Ignacio Weppler"
+        />
+
+        <p>
+          Como único responsable del desarrollo frontend, mis tareas incluyeron:
+        </p>
+
+        <ul>
+          <li>
+            ✔ Implementación del sistema de login y registro utilizando cookies
+            para persistencia de sesión.
+          </li>
+          <li>
+            ✔ Validación de formularios para asegurar la calidad de los datos
+            ingresados por los usuarios.
+          </li>
+          <li>
+            ✔ Restricción dinámica de funcionalidades según el estado de
+            autenticación del usuario (logueado/no logueado).
+          </li>
+          <li>
+            ✔ Trabajo autónomo y decisión de herramientas aplicando buenas
+            prácticas con <strong>Next.js</strong> y <strong
+              >Tailwind CSS</strong
+            >.
+          </li>
+        </ul>
+
+        <br />
+
+        <p>
+          El resultado fue una aplicación funcional, con una interfaz moderna y
+          un flujo de usuario intuitivo, lista para escalar con una base de
+          datos robusta y lógica de autenticación segura.
+        </p>
+
+        <img
+          src={modulo4Henryb.src}
+          alt="Segunda vista previa del proyecto Ecommerce Apple desarrollado por Ignacio Weppler"
+        />
+
+        <br />
+
+        <p>
+          <strong>Tecnologías utilizadas:</strong> Next.js · Tailwind CSS · PostgreSQL
+          · TypeORM
+        </p>
+        <p>
+          <strong>Deploy:</strong>
+          <a href="https://pm-4-fe-pi.vercel.app" target="_blank" rel="noopener"
+            >pm-4-fe-pi.vercel.app</a>
+        </p>
+        <p>
+          <strong>Repositorio:</strong>
+          <a
+            href="https://github.com/IWeppler/PM4FE"
+            target="_blank"
+            rel="noopener">github.com/IWeppler/PM4FE</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <Footer />
 </Layout>
