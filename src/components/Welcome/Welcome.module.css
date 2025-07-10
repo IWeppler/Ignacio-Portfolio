@@ -81,15 +81,16 @@ main {
 @media (max-width: 426px) {
   .subMain small {
     font-size: 24px;
+    margin-bottom: 1rem;
   }
   .subMain h1 {
     font-size: 70px;
-    line-height: 1.2;
+    line-height: 1;
   }
 }
 
 .iconContainer {
-  background: var(--complementario);
+  /* background: var(--complementario); */
   width: 50px;
   height: 50px;
   border-radius: 30px;
@@ -100,13 +101,13 @@ main {
   transition: 0.4s ease-in-out;
 }
 .iconContainer:hover {
-  background: #242529;
+  background: var(--complementario);
 }
 
 .icon {
-  color: var(--textColor);
-  width: 30px;
-  height: 30px;
+  color: var(--second);
+  width: 28px;
+  height: 28px;
 }
 
 .containerBtn {

@@ -1,51 +1,107 @@
 ---
-import styles from "./Benefits.module.css"
-import { initObserver } from '../../scripts/intersection-observer';
-import { SwatchBook, Gauge, SearchCheck, MousePointerClick, MonitorSmartphone } from '@lucide/astro';
+// imports
+import styles from "./Benefits.module.css";
+import {
+  SwatchBook,
+  Gauge,
+  SearchCheck,
+  MousePointerClick,
+  MonitorSmartphone,
+} from "@lucide/astro";
 ---
 
-    <section class={styles.fourthPart}>
-        <h3>Cómo hago la diferencia</h3>
-  
-        <article class={styles.containerWrapper}>  
-        <div class={styles.wrapperBenefits}>
-          <div class={styles.benefits}>
-            <SwatchBook size={40} class={styles.icon}/>
-            <h4>Diseño Atractivo</h4>
-            <p>Diseño tu página alineada con la identidad de tu marca, para que genere confianza desde el primer click.</p>
-          </div>
-          <div class={styles.benefits}>
-            <Gauge size={40} class={styles.icon}/>
-            <h4>Velocidad de carga</h4>
-            <p>
-              Optimizo el rendimiento de tu sitio para que cargue rápido desde el primer segundo, para que nadie se vaya antes de ver lo mejor de tu web.
-            </p>
-          </div>
-          <div class={styles.benefits}>
-            <SearchCheck size={40} class={styles.icon}/>
-            <h4>SEO optimizado</h4>
-            <p>Haré que la página web aparezca en los primeros lugares de Google al buscar tu marca.</p>
-          </div>
-        </div>
-        <div class={styles.wrapperBenefitsRow}>
-          <div class={styles.benefits}>
-            <MousePointerClick size={40} class={styles.icon}/>
-            <h4>Experiencia de Usuario</h4>
-            <p>Creo una navegación clara, sencilla y pensada para que tus usuarios encuentren lo que buscan sin perder tiempo.</p>
-          </div>
-          <div class={styles.benefits}>
-            <MonitorSmartphone size={40} class={styles.icon}/>
-            <h4>Adaptable a todos los dispositivos</h4>
-            <p>Tu web se verá increíble en celulares, tablets y computadoras.</p>
-          </div>
-        </div>
-      </article>
-      </section>
+<section class={styles.fourthPart}>
+  <h3>Cómo hago la diferencia</h3>
 
-<script is:inline>
-  import { onMount } from 'astro/client';
+  <!-- El contenedor padre común para todas las tarjetas ahora es el glowGroup -->
+  <article
+    class={`${styles.containerWrapper} ${styles.glowGroup}`}
+    data-glow-group
+  >
+    <div class={styles.wrapperBenefits}>
+      <!-- Card 1 -->
+      <div class={`${styles.benefits} ${styles.benefitsGlow}`} data-glow>
+        <SwatchBook size={40} class={styles.icon} />
+        <h4>Diseño Atractivo</h4>
+        <p>
+          Diseño tu página alineada con la identidad de tu marca, para que
+          genere confianza desde el primer click.
+        </p>
+      </div>
 
-  onMount(() => {
-    initObserver();
-  });
-</script>
+      <!-- Card 2 -->
+      <div class={`${styles.benefits} ${styles.benefitsGlow}`} data-glow>
+        <Gauge size={40} class={styles.icon} />
+        <h4>Velocidad de carga</h4>
+        <p>
+          Optimizo el rendimiento de tu sitio para que cargue rápido desde el
+          primer segundo.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class={`${styles.benefits} ${styles.benefitsGlow}`} data-glow>
+        <SearchCheck size={40} class={styles.icon} />
+        <h4>SEO optimizado</h4>
+        <p>
+          Haré que la página web aparezca en los primeros lugares de Google al
+          buscar tu marca.
+        </p>
+      </div>
+    </div>
+
+    <div class={styles.wrapperBenefitsRow}>
+      <!-- Card 4 -->
+      <div class={`${styles.benefits} ${styles.benefitsGlow}`} data-glow>
+        <MousePointerClick size={40} class={styles.icon} />
+        <h4>Experiencia de Usuario</h4>
+        <p>
+          Navegación clara y pensada para que tus usuarios encuentren lo que
+          buscan sin perder tiempo.
+        </p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class={`${styles.benefits} ${styles.benefitsGlow}`} data-glow>
+        <MonitorSmartphone size={40} class={styles.icon} />
+        <h4>Adaptable a todos los dispositivos</h4>
+        <p>Tu web se verá increíble en celulares, tablets y computadoras.</p>
+      </div>
+    </div>
+  </article>
+
+  <!-- Script al final para el efecto glow -->
+  <script>
+    if (typeof window !== "undefined") {
+      const group = document.querySelector(
+        "[data-glow-group]"
+      ) as HTMLElement | null;
+      const cards = document.querySelectorAll(
+        "[data-glow]"
+      ) as NodeListOf<HTMLElement>;
+
+      if (group) {
+        group.addEventListener("mousemove", (e) => {
+          const event = e as MouseEvent;
+
+          cards.forEach((card) => {
+            const rect = card.getBoundingClientRect();
+            const x = ((event.clientX - rect.left) / rect.width) * 100;
+            const y = ((event.clientY - rect.top) / rect.height) * 100;
+            card.style.setProperty("--x", `${x}%`);
+            card.style.setProperty("--y", `${y}%`);
+          });
+        });
+
+        group.addEventListener("mouseleave", () => {
+          // === CAMBIO AQUÍ: YA NO RESETEAMOS LAS VARIABLES --x y --y ===
+          // Las variables retienen su último valor. La opacidad controlará la desaparición.
+          // cards.forEach(card => {
+          //   card.style.removeProperty("--x");
+          //   card.style.removeProperty("--y");
+          // });
+        });
+      }
+    }
+  </script>
+</section>

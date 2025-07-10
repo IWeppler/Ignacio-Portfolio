@@ -16,20 +16,23 @@
 
 .benefits {
   background: var(--complementario);
+  border: 1px solid var(--complementario);
   padding: 2rem;
   border-radius: 12px;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeUp 0.8s ease forwards;
   transition: transform 0.6s ease, box-shadow 0.6s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .benefits.visible {
   animation: fadeUp 0.6s ease forwards;
-  animation-delay: var(--delay, 0s); /* permite usar CSS variables */
+  animation-delay: var(--delay, 0s);
 }
 
-/* Agregar un poco de dinamismo al pasar el mouse */
 .benefits:hover {
   transform: translateY(10px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
@@ -71,7 +74,7 @@
 .wrapperBenefits {
   display: flex;
   gap: 1rem;
-  flex: wrap;
+  flex-wrap: wrap;
   flex-grow: 1;
   margin-bottom: 1rem;
   justify-content: space-between;
@@ -82,7 +85,6 @@
   max-width: calc(33.33% - 0.665rem);
 }
 
-/* 2 columnas abajo */
 .wrapperBenefitsRow {
   display: flex;
   flex-wrap: wrap;
@@ -95,7 +97,6 @@
   max-width: calc(50% - 0.5rem);
 }
 
-/* Responsivo */
 @media (max-width: 1024px) {
   .wrapperBenefits .benefits {
     flex: 1 1 calc(50% - 0.5rem);
@@ -120,4 +121,24 @@
     flex: 1 1 100%;
     max-width: 100%;
   }
+}
+
+
+.benefits::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    rgba(101, 254, 81, 0.1),
+    transparent 40% 
+  );
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease; 
+}
+
+.glowGroup:hover .benefits::before {
+  opacity: 1;
 }
