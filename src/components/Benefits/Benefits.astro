@@ -8,12 +8,16 @@ import {
   MousePointerClick,
   MonitorSmartphone,
 } from "@lucide/astro";
+
+import { t, getValidLang } from '../../utils/i18n';
+
+const { lang } = Astro.params;
+const langCode = getValidLang(lang);
 ---
 
 <section class={styles.fourthPart}>
-  <h3>Cómo hago la diferencia</h3>
+  <h3>{t(langCode, "benefits.title")}</h3>
 
-  <!-- El contenedor padre común para todas las tarjetas ahora es el glowGroup -->
   <article
     class={`${styles.containerWrapper} ${styles.glowGroup}`}
     data-glow-group
@@ -22,30 +26,26 @@ import {
       <!-- Card 1 -->
       <div class={`${styles.benefits} ${styles.benefitsGlow}`} data-glow>
         <SwatchBook size={40} class={styles.icon} />
-        <h4>Diseño Atractivo</h4>
+        <h4>{t(langCode, "benefits.title-card1")}</h4>
         <p>
-          Diseño tu página alineada con la identidad de tu marca, para que
-          genere confianza desde el primer click.
+          {t(langCode, "benefits.p-card1")}
         </p>
       </div>
 
       <!-- Card 2 -->
       <div class={`${styles.benefits} ${styles.benefitsGlow}`} data-glow>
         <Gauge size={40} class={styles.icon} />
-        <h4>Velocidad de carga</h4>
+        <h4>{t(langCode, "benefits.title-card2")}</h4>
         <p>
-          Optimizo el rendimiento de tu sitio para que cargue rápido desde el
-          primer segundo.
+           {t(langCode, "benefits.p-card2")}
         </p>
       </div>
 
       <!-- Card 3 -->
       <div class={`${styles.benefits} ${styles.benefitsGlow}`} data-glow>
         <SearchCheck size={40} class={styles.icon} />
-        <h4>SEO optimizado</h4>
-        <p>
-          Haré que la página web aparezca en los primeros lugares de Google al
-          buscar tu marca.
+        <h4>{t(langCode, "benefits.title-card3")}</h4>
+        <p>{t(langCode, "benefits.p-card3")}
         </p>
       </div>
     </div>
@@ -54,18 +54,17 @@ import {
       <!-- Card 4 -->
       <div class={`${styles.benefits} ${styles.benefitsGlow}`} data-glow>
         <MousePointerClick size={40} class={styles.icon} />
-        <h4>Experiencia de Usuario</h4>
-        <p>
-          Navegación clara y pensada para que tus usuarios encuentren lo que
-          buscan sin perder tiempo.
+        <h4>{t(langCode, "benefits.title-card4")}</h4>
+        <p>{t(langCode, "benefits.p-card4")}
         </p>
       </div>
 
       <!-- Card 5 -->
       <div class={`${styles.benefits} ${styles.benefitsGlow}`} data-glow>
         <MonitorSmartphone size={40} class={styles.icon} />
-        <h4>Adaptable a todos los dispositivos</h4>
-        <p>Tu web se verá increíble en celulares, tablets y computadoras.</p>
+        <h4>          {t(langCode, "benefits.title-card5")}
+</h4>
+        <p>{t(langCode, "benefits.p-card5")}</p>
       </div>
     </div>
   </article>
@@ -94,12 +93,6 @@ import {
         });
 
         group.addEventListener("mouseleave", () => {
-          // === CAMBIO AQUÍ: YA NO RESETEAMOS LAS VARIABLES --x y --y ===
-          // Las variables retienen su último valor. La opacidad controlará la desaparición.
-          // cards.forEach(card => {
-          //   card.style.removeProperty("--x");
-          //   card.style.removeProperty("--y");
-          // });
         });
       }
     }

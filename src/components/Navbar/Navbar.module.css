@@ -44,6 +44,46 @@ header a:hover {
 
 /*  LENGUAJES  */
 .languages {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
+.langDetails {
+  position: relative;
+}
+
+.langDetails summary {
+  list-style: none;
+  background: #11111170;
+  border: 2px solid var(--first);
+  color: var(--textColor);
+  border-radius: 20px;
+  padding: 6px 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.langDetails[open] summary {
+  border-color: var(--first);
+  color: var(--second);
+}
+
+.langDetails ul {
   position: absolute;
-  gap: 20px;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.langDetails li a {
+  display: block;
+  padding: 8px 12px;
+  color: var(--textColor);
+  text-decoration: none;
+}
+
+.langDetails li a:hover {
+  color: var(--second);
 }

@@ -1,0 +1,51 @@
+{
+  "navbar": {
+    "link-a": "Home",
+    "link-b": "Projects",
+    "link-c": "Contact"
+  },
+  "welcome": {
+    "state": "Available for work",
+    "btn-cta": "Get in touch"
+  },
+  "palabras": [
+    "DEVELOP", "INNOVATE", "DRIVE", "SOLVE", "CREATE",
+    "OPTIMIZE", "AUTOMATE", "CONNECT", "INSPIRE", "COLLABORATE", "DESIGN", "REVOLUTIONIZE"
+  ],
+  "aboutme": {
+    "title": "About me",
+    "paragraph1": "Hi, I'm Ignacio 👋 a full stack web developer. I turn your ideas into websites and apps that stand out, connect with users, and",
+    "span1": " grow your business.",
+    "paragraph2": "I love understanding your needs and",
+    "span2": " building custom solutions.",
+    "question": " With a focus on clean and intuitive design, I bring your vision to life. Ready for your next project?",
+    "cta_label": "Go to contact section",
+    "cta_text": "Let’s talk!"
+  },
+  "works": {
+    "title": "Projects",
+    "desc-club": "Institutional website for a sports club",
+    "desc-trampozo": "Web app for a playful brand’s visibility",
+    "desc-ecommerce": "Online tech store",
+    "desc-beta": "Platform for online academy",
+    "desc-nivo": "Web tool for business management",
+    "desc-courtify": "Court reservation management system"
+  },
+  "benefits": {
+    "title": "How I make a difference",
+    "title-card1": "Attractive design",
+    "p-card1": "I craft your site to match your brand’s identity, creating trust from the very first click.",
+    "title-card2": "Fast loading",
+    "p-card2": "I optimize performance so your website loads quickly from the start.",
+    "title-card3": "SEO optimized",
+    "p-card3": "I make sure your site appears on top of Google when people search for your brand.",
+    "title-card4": "User experience",
+    "p-card4": "Simple, thoughtful navigation so users find what they need without frustration.",
+    "title-card5": "Responsive design",
+    "p-card5": "Your website will look great on phones, tablets, and desktops."
+  },
+  "footer": {
+    "title": "Tell me about your next project",
+    "name": "Built in 2025 by Ignacio Weppler 🤟"
+  }
+}

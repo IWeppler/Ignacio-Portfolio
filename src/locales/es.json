@@ -1,0 +1,51 @@
+{
+  "navbar":{
+    "link-a":"Inicio",
+    "link-b":"Trabajos",
+    "link-c":"Contacto"
+  },
+  "welcome": {
+    "state": "Disponible para trabajar",
+    "btn-cta": "Contactame"
+  },
+  "palabras": [
+    "DESARROLLAR", "INNOVAR", "IMPULSAR", "RESOLVER", "CREAR",
+    "OPTIMIZAR", "AUTOMATIZAR", "CONECTAR", "INSPIRAR", "COLABORAR", "DISEÑAR", "REVOLUCIONAR"
+  ],
+  "aboutme": {
+    "title": "Sobre mí",
+    "paragraph1": "Hola, soy Ignacio 👋 desarrollador web full stack. Me dedico a transformar tus ideas en webs y apps que impactan, conectan y hacen",
+    "span1": " crecer tu negocio.",
+    "paragraph2": "Me apasiona entender lo que necesitas y",
+    "span2": " crear soluciones a medida.",
+    "question": " Con un enfoque en diseños simples e intuitivos, haciendo realidad tus sueños. ¿Listo para tu próximo proyecto?",
+    "cta_label": "Ir a la sección de contacto",
+    "cta_text": "¡Hablemos!"
+  },
+"works": {
+  "title": "Trabajos",
+  "desc-club": "Sitio institucional para club deportivo",
+  "desc-trampozo": "Web app para visibilidad de marca lúdica",
+  "desc-ecommerce": "Tienda online de tecnología",
+  "desc-beta": "Aplicación para academia online",
+  "desc-nivo": "Herramienta web para gestión comercial",
+  "desc-courtify": "Gestión de reservas de canchas"
+  },
+  "benefits":{
+    "title": "Cómo hago la diferencia",
+    "title-card1": "Diseño atractivo",
+    "p-card1": "Diseño tu página alineada con la identidad de tu marca, para que genere confianza desde el primer click.",
+    "title-card2": "Velocidad de carga",
+    "p-card2": "Optimizo el rendimiento de tu sitio para que cargue rápido desde el primer segundo.",
+    "title-card3": "SEO optimizado",
+    "p-card3": "Haré que la página web aparezca en los primeros lugares de Google al buscar tu marca.",
+    "title-card4": "Experiencia de Usuario",
+    "p-card4": "Navegación clara y pensada para que tus usuarios encuentren lo que buscan sin perder tiempo.",
+    "title-card5": "Adaptable a todos los dispositivos",
+    "p-card5": "Tu web se verá increíble en celulares, tablets y computadoras."
+  },
+  "footer":{
+    "title": "Háblame de tu próximo proyecto",
+    "name": "Hecho en 2025 por Ignacio Weppler 🤟"
+  }
+}

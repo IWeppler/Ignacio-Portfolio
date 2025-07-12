@@ -37,16 +37,41 @@ h3 {
   font-style: italic;
 }
 
-.spanAboutMeCTA {
+.linkCTA {
+  position: relative;
+  display: inline-block; 
   color: var(--second);
   font-weight: 400;
   font-style: italic;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.spanAboutMeCTA:hover {
+.linkCTA:hover {
   color: var(--mainColor);
-  text-decoration: underline;
+  --stroke: var(--mainColor);
+  --stroke-delay: 0.1s;
+  --offset: 180px; 
 }
+
+.underlineSVG {
+  width: 240px; 
+  height: auto;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 10px) translateZ(0); 
+  fill: none;
+  stroke: var(--stroke, var(--second));
+  stroke-linecap: round;
+  stroke-width: 1.5px;
+  stroke-dasharray: var(--offset, 69px) 278px; 
+  stroke-dashoffset: 361px;
+  pointer-events: none;
+  transition: stroke 0.15s ease var(--stroke-delay, 0s), stroke-dasharray 0.35s;
+}
+
+
 
 .wrapperIcons {
   display: grid;

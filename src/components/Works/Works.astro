@@ -6,45 +6,48 @@ import cuatro from "../../assets/cuatro.png";
 import modulo4Henry from "../../assets/modulo4Henry.png";
 import astroNivo from "../../assets/astroNivo.png";
 import courtify from "../../assets/courtify.png";
+import { t, getValidLang } from '../../utils/i18n';
 
+const { lang } = Astro.params;
+const langCode = getValidLang(lang);
 
 const proyectos = [
   {
-    nombre: "Club Atletico Tostado",
+    nombre: "Club Atlético Tostado",
     imagen: tres,
-    descripcion: "Sitio institucional para club deportivo"
+    descripcion: t(langCode, "works.desc-club")
   },
   {
     nombre: "El Trampozo",
     imagen: dos,
-    descripcion: "Web app para visibilidad de marca lúdica"
+    descripcion: t(langCode, "works.desc-trampozo")
   },
   {
     nombre: "Ecommerce Apple",
     imagen: modulo4Henry,
-    descripcion: "Tienda online de tecnología"
+    descripcion: t(langCode, "works.desc-ecommerce")
   },
   {
     nombre: "Beta & Omega",
     imagen: uno,
-    descripcion: "Aplicación para academia online"
+    descripcion: t(langCode, "works.desc-beta")
   },
   {
     nombre: "Nivo POS",
     imagen: astroNivo,
-    descripcion: "Herramienta web para gestión comercial"
+    descripcion: t(langCode, "works.desc-nivo")
   },
   {
     nombre: "Courtify",
     imagen: courtify,
-    descripcion: "Gestión de reservas de canchas"
-  },
+    descripcion: t(langCode, "works.desc-courtify")
+  }
 ];
 ---
 
 <section id="proyectos" class="flex flex-col items-center w-full" style="padding: 8px; padding-bottom: 10rem">
   <div class="mb-6">
-    <h3 class="text-3xl font-bold text-white">Trabajos</h3>
+    <h3 class="text-3xl font-bold text-white">{t(langCode, "works.title")}</h3>
   </div>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 p-4">

@@ -1,0 +1,51 @@
+{
+  "navbar": {
+    "link-a": "Início",
+    "link-b": "Projetos",
+    "link-c": "Contato"
+  },
+  "welcome": {
+    "state": "Disponível para trabalhar",
+    "btn-cta": "Fale comigo"
+  },
+  "palabras": [
+    "DESENVOLVER", "INOVAR", "IMPULSIONAR", "RESOLVER", "CRIAR",
+    "OTIMIZAR", "AUTOMATIZAR", "CONECTAR", "INSPIRAR", "COLABORAR", "DESENHAR", "REVOLUCIONAR"
+  ],
+  "aboutme": {
+    "title": "Sobre mim",
+    "paragraph1": "Olá, sou Ignacio 👋 desenvolvedor web full stack. Transformo suas ideias em sites e apps que se destacam, conectam com o público e",
+    "span1": " fazem seu negócio crescer.",
+    "paragraph2": "Gosto de entender o que você precisa e",
+    "span2": " criar soluções personalizadas.",
+    "question": " Com foco em design limpo e intuitivo, trago suas ideias à vida. Pronto para o próximo projeto?",
+    "cta_label": "Ir para a seção de contato",
+    "cta_text": "Vamos conversar!"
+  },
+  "works": {
+    "title": "Projetos",
+    "desc-club": "Site institucional para clube esportivo",
+    "desc-trampozo": "Aplicativo web para dar visibilidade a uma marca lúdica",
+    "desc-ecommerce": "Loja virtual de tecnologia",
+    "desc-beta": "Plataforma para academia online",
+    "desc-nivo": "Ferramenta web para gestão comercial",
+    "desc-courtify": "Sistema de reservas de quadras esportivas"
+  },
+  "benefits": {
+    "title": "Como faço a diferença",
+    "title-card1": "Design atrativo",
+    "p-card1": "Crio seu site alinhado com a identidade da sua marca, gerando confiança desde o primeiro clique.",
+    "title-card2": "Carregamento rápido",
+    "p-card2": "Otimizo o desempenho do seu site para que carregue rapidamente desde o início.",
+    "title-card3": "SEO otimizado",
+    "p-card3": "Faço seu site aparecer nas primeiras posições do Google quando buscam sua marca.",
+    "title-card4": "Experiência do usuário",
+    "p-card4": "Navegação clara e eficiente para que seus usuários encontrem o que procuram sem perder tempo.",
+    "title-card5": "Design responsivo",
+    "p-card5": "Seu site vai ficar incrível em celulares, tablets e computadores."
+  },
+  "footer": {
+    "title": "Me conte sobre seu próximo projeto",
+    "name": "Feito em 2025 por Ignacio Weppler 🤟"
+  }
+}

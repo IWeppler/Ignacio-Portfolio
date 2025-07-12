@@ -1,20 +1,35 @@
 ---
-import styles from "./Navbar.module.css"
----   
-    <header class={styles.navbar}>
-        <nav class={styles.navbar}>
-          <a href="/#inicio" class={styles.navLink}>Inicio</a>
-          <a href="/#proyectos" class={styles.navLink}>Trabajos</a>
-          <a href="/#contacto" class={styles.navLink}>Contacto</a>
-        </nav> 
-    </header>
-      
+import styles from "./Navbar.module.css";
+import { t, getValidLang } from '../../utils/i18n';
 
-<!-- astro-i18n -->
+const { lang } = Astro.params;
+const langCode = getValidLang(lang);
+---
 
-<!-- Botones para cambiar de idioma -->
-        <!-- <div class="languages">
-          <button class="lang-button" id="btn-en" data-language="en">Inglés</button>
-          <button class="lang-button" id="btn-es" data-language="es">Español</button>
-          <button class="lang-button" id="btn-pt" data-language="pt">Portugués</button>
-         </div> -->
+<header class={styles.navbar}>
+  <nav class={styles.navbar}>
+    <a href="/#inicio" class={styles.navLink}>{t(langCode, "navbar.link-a")}</a>
+    <a href="/#proyectos" class={styles.navLink}>{t(langCode, "navbar.link-b")}</a>
+    <a href="/#contacto" class={styles.navLink}>{t(langCode, "navbar.link-c")}</a>
+  </nav>
+
+  <div class={styles.languages}>
+  <details class={styles.langDetails}>
+    <summary>{langCode.toUpperCase()}</summary>
+    <ul>
+      <li><a href="/" aria-label="Español">ES</a></li>
+      <li><a href="/en/" aria-label="English">EN</a></li>
+      <li><a href="/pt/" aria-label="Português">PT</a></li>
+    </ul>
+  </details>
+</div>
+</header>
+
+<script is:inline>
+  function handleLanguageChange(event) {
+    const lang = event.target.value;
+    const path = window.location.pathname.replace(/^\/(es|en|pt)/, '');
+    const finalPath = lang === 'es' ? `${path}` : `/${lang}${path}`;
+    window.location.href = finalPath;
+  }
+</script>

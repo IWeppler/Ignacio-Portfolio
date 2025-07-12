@@ -1,11 +1,15 @@
 ---
 import styles from "./Footer.module.css";
+import { t, getValidLang } from '../../utils/i18n';
+
+const { lang } = Astro.params;
+const langCode = getValidLang(lang);
 ---
 
 <footer class={styles.mainFooter} id="contacto">
   <div class={styles.footerContainer}>
     <div class={styles.textFooter}>
-      <h3 class={styles.titleFooter}>Háblame de tu próximo proyecto</h3>
+      <h3 class={styles.titleFooter}>{t(langCode, "footer.title")}</h3>
       <a
         href="https://api.whatsapp.com/send?text=Hola, quiero comenzar con mi proyecto!&phone=+541154702118"
         target="_blank"
@@ -29,7 +33,7 @@ import styles from "./Footer.module.css";
     </div>
 
     <div class={styles.footerEnd}>
-      <p>Hecho en 2025 por Ignacio Weppler 🤟</p>
+      <p>{t(langCode, "footer.name")}</p>
     </div>
   </div>
 </footer>

@@ -1,5 +1,24 @@
 ---
 import styles from "./Banner.module.css";
+import { t, getValidLang } from "../../utils/i18n";
+
+const { lang } = Astro.params;
+const langCode = getValidLang(lang);
+const palabras = t(langCode, "palabras");
+---
+
+<article class={styles.bannerContainer}>
+  <div class={styles.marquee}>
+    <div class={styles.track}>
+      {Array(4).fill(palabras).flat().map((word) => (
+        <span class={styles.word} >{word}</span>
+      ))}
+    </div>
+  </div>
+</article>
+
+<!-- ---
+import styles from "./Banner.module.css";
 const palabras = [
   "DESARROLLAR", "INNOVAR", "IMPULSAR", "RESOLVER", "CREAR",
   "OPTIMIZAR", "AUTOMATIZAR", "CONECTAR", "INSPIRAR", "COLABORAR", "DISEÑAR", "REVOLUCIONAR"
@@ -13,4 +32,4 @@ const palabras = [
       ))}
     </div>
   </div>
-</article>
+</article> -->

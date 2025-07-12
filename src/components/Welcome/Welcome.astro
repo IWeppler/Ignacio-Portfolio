@@ -1,12 +1,16 @@
 ---
 import styles from "./Welcome.module.css"
+import { t, getValidLang } from '../../utils/i18n';
+
+const { lang } = Astro.params;
+const langCode = getValidLang(lang);
 ---
 
 	<main id="inicio">
 		<div class={styles.subMain}>
 		  <div class={styles.status}>
 			<span class={styles.dot}></span>
-			<p>Disponible para trabajar</p>
+			<p>{t(langCode, "welcome.state")}</p>
 		  </div>
   
 		  <small>Ignacio Nicolás Weppler</small>
@@ -15,7 +19,7 @@ import styles from "./Welcome.module.css"
 			<a
 			  href="https://api.whatsapp.com/send?text=Hola, quiero comenzar con mi proyecto!&phone=+541154702118"
 			  target="_blank"
-			  ><button class={styles.firstBtn}>Contactame</button></a
+			  ><button class={styles.firstBtn}>{t(langCode, "welcome.btn-cta")}</button></a
 			>
 			<!-- ICONO LINKEDIN -->
 			<a
