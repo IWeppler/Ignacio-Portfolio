@@ -14,7 +14,7 @@ export function t(lang: SupportedLang, key: string): any {
     if (result && typeof result === 'object' && k in result) {
       result = result[k];
     } else {
-      return key; // fallback: muestra la clave si no existe
+      return key;
     }
   }
 
