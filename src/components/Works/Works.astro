@@ -2,7 +2,6 @@
 import uno from "../../assets/uno.webp";
 import dos from "../../assets/dos.webp";
 import tres from "../../assets/tres.webp";
-import cuatro from "../../assets/cuatro.webp";
 import modulo4Henry from "../../assets/modulo4Henry.webp";
 import astroNivo from "../../assets/astroNivo.webp";
 import courtify from "../../assets/courtify.webp";
@@ -30,7 +29,6 @@ const locale = locales[langCode];
 type Proyecto = {
   name: string;
   subtitulo?: string;
-  // add other fields as needed
 };
 const proyectos: Record<string, Proyecto> = locale.proyectos;
 ---
@@ -43,7 +41,7 @@ const proyectos: Record<string, Proyecto> = locale.proyectos;
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 p-4">
     {Object.entries(proyectos).map(([slug, proyecto]) => (
       <div>
-        {/* Construimos el enlace con la estructura de ruta correcta: /[lang]/[slug] */}
+        
         <a href={`/${langCode}/${slug}`}>
           <div class="relative w-full aspect-[1.2/1] min-h-[327px] rounded-2xl overflow-hidden cursor-pointer group">
             <div class="absolute inset-0 bg-black/70 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-400 rounded-2xl z-10"></div>
@@ -54,7 +52,7 @@ const proyectos: Record<string, Proyecto> = locale.proyectos;
               </div>
             </div>
 
-            {/* Usamos una etiqueta <img> estándar para mostrar la imagen */}
+            
             <img
               src={imageMap[slug as keyof typeof imageMap].src}
               alt={`${proyecto.name} - ${proyecto?.subtitulo}`}
@@ -66,7 +64,7 @@ const proyectos: Record<string, Proyecto> = locale.proyectos;
               <h5 class="text-[1.7rem] font-semibold text-[var(--second)] mb-2">
                 {proyecto?.name}
               </h5>
-              {/* Usamos el subtítulo del proyecto para la descripción */}
+              
               <small class="text-[1.1rem] text-[var(--second)]">{proyecto?.subtitulo}</small>
             </div>
           </div>
