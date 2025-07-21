@@ -49,6 +49,12 @@ header a:hover {
   top: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .languages {
+    top: 90px;
+  }
+}
+
 .langDetails {
   position: relative;
 }

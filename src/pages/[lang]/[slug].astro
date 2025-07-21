@@ -1,0 +1,133 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Navbar from "../../components/Navbar/Navbar.astro";
+import Footer from "../../components/Footer/Footer.astro";
+import { Image } from "astro:assets";
+
+//IMAGENES
+import uno from "../../assets/uno.webp";
+import unob from "../../assets/unob.webp";
+import dos from "../../assets/dos.webp";
+import tres from "../../assets/tres.webp";
+import cuatro from "../../assets/cuatro.webp";
+import astroNivo from "../../assets/astroNivo.webp";
+import figmaNivo from "../../assets/figmaNivo.webp";
+import courtify from "../../assets/courtify.webp";
+import courtifyb from "../../assets/courtifyb.webp";
+import courtifyc from "../../assets/courtifyc.webp";
+import modulo4Henry from "../../assets/modulo4Henry.webp";
+import modulo4Henryb from "../../assets/modulo4Henryb.webp";
+
+//i18N
+import { getValidLang, t } from "../../utils/i18n";
+import en from "../../locales/en.json";
+import es from "../../locales/es.json";
+import pt from "../../locales/pt.json";
+
+export async function getStaticPaths() {
+  const slugs = [
+    "proyecto1",
+    "proyecto2",
+    "proyecto3",
+    "proyecto4",
+    "proyecto5",
+    "proyecto6",
+  ];
+  const langs = ["en", "es", "pt"];
+
+  return langs.flatMap((lang) =>
+    slugs.map((slug) => ({ params: { lang, slug } }))
+  );
+}
+
+type ProjectData = {
+  etiqueta: string;
+  name: string;
+  subtitulo: string;
+  p1: string;
+  imgAlt: string;
+  p2: string;
+  caracteristicas?: string;
+  li1?: string;
+  li2?: string;
+  li3?: string;
+  li4?: string;
+  p3?: string;
+};
+
+const { lang, slug } = Astro.params;
+const langCode = (getValidLang(lang) as "en" | "es" | "pt") || "en";
+
+type SlugType =
+  | "proyecto1"
+  | "proyecto2"
+  | "proyecto3"
+  | "proyecto4"
+  | "proyecto5"
+  | "proyecto6";
+
+const imageMap = {
+  proyecto1: { img1: uno, img2: unob },
+  proyecto2: { img1: dos, img2: tres },
+  proyecto3: { img1: courtify, img2: courtifyb, img3: courtifyc },
+  proyecto4: { img1: modulo4Henry, img2: modulo4Henryb },
+  proyecto5: { img1: astroNivo, img2: figmaNivo },
+  proyecto6: { img1: cuatro, img2: cuatro },
+};
+
+const locales = { en, es, pt };
+const locale = locales[langCode];
+
+if (!slug || !(slug in locale.proyectos) || !(slug in imageMap)) {
+  return Astro.redirect("/404");
+}
+
+const typedSlug = slug as SlugType;
+const proyecto = locale.proyectos[typedSlug] as ProjectData;
+const imagenes = imageMap[typedSlug];
+---
+
+<Layout
+  title={`${proyecto.name} - | Ignacio Weppler`}
+  description={proyecto.subtitulo}
+  url={`https://ignacioweppler.vercel.app/${lang}/${slug}`}
+  image={imagenes.img1.src}
+>
+  <Navbar langCode={langCode} />
+
+  <section class="containProject">
+    <div class="contain-titlesProject">
+      <div class="titlesProject">
+        <small>{proyecto.etiqueta}</small>
+        <h1>{proyecto.name}</h1>
+        <p>{proyecto.subtitulo}</p>
+      </div>
+    </div>
+
+    <div class="contain-bodyProject">
+      <div class="bodyProject">
+        <p>{proyecto.p1}</p>
+        <img
+          src={imagenes.img1.src}
+          alt={proyecto.imgAlt ?? "Imagen del proyecto"}
+        />
+        <p>{proyecto.p2}</p>
+        <br />
+        <h3>{proyecto.caracteristicas ?? "Características principales"}</h3>
+        <ul>
+          <li>{proyecto.li1}</li>
+          <li>{proyecto.li2}</li>
+          <li>{proyecto.li3}</li>
+          {proyecto.li4 && <li>{proyecto.li4}</li>}
+        </ul>
+        <img
+          src={imagenes.img2.src}
+          alt={proyecto.imgAlt ?? "Imagen adicional del proyecto"}
+        />
+        <p>{proyecto.p3}</p>
+      </div>
+    </div>
+  </section>
+
+  <Footer langCode={langCode} />
+</Layout>

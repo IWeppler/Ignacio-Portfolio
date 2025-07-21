@@ -1,6 +1,6 @@
 ---
 import { ClientRouter } from "astro:transitions";
-import Analytics from '@vercel/analytics/astro'
+import Analytics from "@vercel/analytics/astro";
 import SEO from "../components/SEO.astro";
 import "../styles/global.css";
 
@@ -13,7 +13,7 @@ const {
 ---
 
 <!doctype html>
-<html lang={Astro.params.lang || 'es'}>
+<html lang={Astro.params.lang || "es"}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,7 +22,7 @@ const {
     <SEO title={title} description={description} url={url} image={image} />
 
     <!-- Favicon, fuentes e íconos -->
-    <link rel="icon" type="image/ico+xml" href="/logo.ico" />
+    <link rel="icon" type="image/ico+xml" href="/icon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -41,6 +41,6 @@ const {
   <body>
     <ClientRouter />
     <slot />
-    <Analytics client:load/>
+    <Analytics />
   </body>
 </html>

@@ -21,7 +21,6 @@ export function t(lang: SupportedLang, key: string): any {
   return result;
 }
 
-
 export function getValidLang(lang: string | undefined): SupportedLang {
   const supportedLangs = Object.keys(translations) as SupportedLang[];
   if (typeof lang === 'string' && supportedLangs.includes(lang as SupportedLang)) {

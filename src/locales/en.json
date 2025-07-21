@@ -47,5 +47,98 @@
   "footer": {
     "title": "Tell me about your next project",
     "name": "Built in 2025 by Ignacio Weppler 🤟"
-  }
+  },
+
+  "proyectos": {
+  "proyecto1": {
+  "etiqueta": "First Project",
+  "name": "Club Atlético Tostado",
+  "subtitulo": "Digitizing the region's sports heartbeat",
+  "p1": "Club Atlético Tostado, the most iconic and largest sports club in the area, lacked a digital presence that matched its prestige. I identified this need and developed a comprehensive solution that transformed how the club connects with its members, players, and community.",
+  "p2": "The project's objectives were to provide centralized information on schedules, activities, and events; enable dynamic publication of club news and updates; and facilitate member interaction through an online space for registration and secure monthly payments.",
+  "p3": "This website not only modernized the club's digital presence but also simplified administrative processes, improved communication with members, and positioned Club Atlético Tostado as a modern and innovative institution in the region.",
+  "li1": "Intuitive and functional interface: Designed for both members and visitors.",
+  "li2": "News system: Quick update of club news, with an adaptable and easy-to-manage structure.",
+  "li3": "Member portal: User registration, membership management, and online payments.",
+  "li4": "Sports schedules and activities: Interactive calendars with information on training, events, and competitions.",
+  "img": "/src/assets/tres.webp",
+  "imgAlt": "Preview of the Club Atlético Tostado project",
+  "caracteristicas": "Main Features"
+},
+"proyecto2": {
+  "etiqueta": "Second Project",
+  "name": "El Trampozo",
+  "subtitulo": "Web app for playful brand visibility",
+  "p1": "El Trampozo is a web app I developed for a trampoline company. The goal was to create a platform that not only showcased their products but also offered an interactive and fun experience for users.",
+  "p2": "The app allows users to explore different trampoline models, watch demo videos, and make purchases directly from the platform. It also includes a booking system for events and themed parties.",
+  "p3": "The design focuses on usability and aesthetics, with an emphasis on user experience. The interface is intuitive and visually appealing, facilitating navigation and improving product interaction.",
+  "li1": "Interactive product exploration: Users can view videos and photos of the trampolines in action.",
+  "li2": "Booking system: Allows users to reserve trampolines for events and parties.",
+  "li3": "Simplified purchase process: Direct purchases from the web app with secure payment options.",
+  "li4": "Attractive and functional design: Focused on user experience.",
+  "img": "/src/assets/trampozo.webp",
+  "imgAlt": "Preview of the El Trampozo project",
+  "caracteristicas": "Main Features"
+},
+"proyecto3": {
+  "etiqueta": "Third Project",
+  "name": "Technology E-commerce",
+  "subtitulo": "Online tech store",
+  "p1": "I developed an e-commerce platform for a tech store that needed a robust and scalable site. The goal was to create a site that not only sold products but also offered a smooth and secure shopping experience.",
+  "p2": "The store features a large product catalog, an advanced search system, and filters to simplify navigation. I also implemented an inventory management system and a secure payment process.",
+  "p3": "The design focuses on simplicity and functionality, ensuring users can find what they need quickly and complete purchases without hassle.",
+  "li1": "Extensive catalog: Easy browsing through categories and products.",
+  "li2": "Advanced search system: Filters by brand, price, and features.",
+  "li3": "Secure payment process: Integration with reliable payment gateways.",
+  "li4": "Inventory management: Automatic stock updates.",
+  "img": "/src/assets/ecommerce.webp",
+  "imgAlt": "Preview of the Technology E-commerce project",
+  "caracteristicas": "Main Features"
+},
+"proyecto4": {
+  "etiqueta": "Fourth Project",
+  "name": "Beta&Omega",
+  "subtitulo": "Application for online academy",
+  "p1": "I developed a web application for an online academy that needed a platform to manage courses, students, and teachers. The goal was to create a system that facilitated distance teaching and learning.",
+  "p2": "The app includes features such as course management, student progress tracking, discussion forums, and evaluation tools. I also implemented a notification system to keep users informed about updates and news.",
+  "p3": "The design focuses on accessibility and usability, ensuring all users can navigate the platform with ease.",
+  "li1": "Course management: Create and manage online courses.",
+  "li2": "Progress tracking: Tools for students and teachers to monitor progress.",
+  "li3": "Discussion forums: Spaces for interaction between students and teachers.",
+  "li4": "Notification system: Alerts about updates and news.",
+  "img": "/src/assets/beta.webp",
+  "imgAlt": "Preview of the Beta project",
+  "caracteristicas": "Main Features"
+},
+"proyecto5": {
+  "etiqueta": "Fifth Project",
+  "name": "Nivo",
+  "subtitulo": "Web tool for business management",
+  "p1": "Nivo is a web tool I developed for a commercial services company. The goal was to create a platform that streamlined client, sales, and report management.",
+  "p2": "The tool includes client management, sales tracking, report generation, and data analysis. I also implemented an authentication and authorization system to ensure data security.",
+  "p3": "The design focuses on efficiency and functionality, ensuring users can quickly access the information they need.",
+  "li1": "Client management: Database to store client information.",
+  "li2": "Sales tracking: Transaction records and performance analysis.",
+  "li3": "Report generation: Customizable reports on sales and clients.",
+  "li4": "Data analysis: Tools to visualize and analyze business information.",
+  "img": "/src/assets/nivo.webp",
+  "imgAlt": "Preview of the Nivo project",
+  "caracteristicas": "Main Features"
+},
+"proyecto6": {
+  "etiqueta": "Sixth Project",
+  "name": "Courtify",
+  "subtitulo": "Court reservation management",
+  "p1": "Courtify is a web application I developed to manage sports court reservations. The goal was to create a platform that made it easy for both users and administrators to book and manage courts.",
+  "p2": "The app includes features like a reservation calendar, user management, notifications, and online payments. I also implemented an authentication system to secure transactions.",
+  "p3": "The design focuses on usability and efficiency, ensuring users can reserve courts quickly and easily.",
+  "li1": "Reservation calendar: Clear view of availability and bookings.",
+  "li2": "User management: User account registration and administration.",
+  "li3": "Notifications: Alerts about bookings and status changes.",
+  "li4": "Online payments: Integration with secure payment gateways.",
+  "img": "/src/assets/courtify.webp",
+  "imgAlt": "Preview of the Courtify project",
+  "caracteristicas": "Main Features"
+}
+}
 }

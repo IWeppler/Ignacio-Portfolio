@@ -47,5 +47,99 @@
   "footer": {
     "title": "Me conte sobre seu próximo projeto",
     "name": "Feito em 2025 por Ignacio Weppler 🤟"
-  }
+  },
+
+  "proyectos": {
+    "proyecto1": {
+  "etiqueta": "Primeiro Projeto",
+  "name": "Club Atlético Tostado",
+  "subtitulo": "Digitalizando o coração esportivo da região",
+  "p1": "O Club Atlético Tostado, o clube esportivo mais icônico e importante da região, não tinha uma presença digital à altura de seu prestígio. Identifiquei essa necessidade e desenvolvi uma solução completa que transformou a forma como o clube se conecta com seus sócios, jogadores e comunidade.",
+  "p2": "Os objetivos do projeto foram: centralizar informações sobre horários, atividades e eventos; permitir a publicação dinâmica de notícias e novidades; e facilitar a interação com os sócios por meio de um espaço online para cadastro e pagamento seguro da mensalidade.",
+  "p3": "Este site não apenas modernizou a presença digital do clube, como também simplificou processos administrativos, melhorou a comunicação com os sócios e posicionou o Club Atlético Tostado como uma instituição moderna e inovadora na região.",
+  "li1": "Interface intuitiva e funcional: Pensada para sócios e visitantes.",
+  "li2": "Sistema de notícias: Atualização rápida com estrutura adaptável e fácil de gerenciar.",
+  "li3": "Portal de sócios: Cadastro de usuários, gestão de mensalidades e pagamentos online.",
+  "li4": "Horários e atividades esportivas: Calendários interativos com treinos, eventos e competições.",
+  "img": "/src/assets/tres.webp",
+  "imgAlt": "Prévia do projeto Club Atlético Tostado",
+  "caracteristicas": "Características Principais"
+},
+"proyecto2": {
+  "etiqueta": "Segundo Projeto",
+  "name": "El Trampozo",
+  "subtitulo": "Web app para visibilidade de marca lúdica",
+  "p1": "El Trampozo é um aplicativo web que desenvolvi para uma empresa de trampolins. O objetivo era criar uma plataforma que não apenas mostrasse seus produtos, mas também oferecesse uma experiência interativa e divertida para os usuários.",
+  "p2": "O app permite que os usuários explorem diferentes modelos de trampolins, assistam a vídeos de demonstração e realizem compras diretamente na plataforma. Também inclui um sistema de reservas para eventos e festas temáticas.",
+  "p3": "O design foca na usabilidade e estética, com uma interface intuitiva e visualmente atraente que facilita a navegação e melhora a interação com os produtos.",
+  "li1": "Exploração interativa de produtos: Vídeos e fotos dos trampolins em ação.",
+  "li2": "Sistema de reservas: Para eventos e festas.",
+  "li3": "Processo de compra simplificado: Compras diretas com opções de pagamento seguras.",
+  "li4": "Design atrativo e funcional: Foco total na experiência do usuário.",
+  "img": "/src/assets/trampozo.webp",
+  "imgAlt": "Prévia do projeto El Trampozo",
+  "caracteristicas": "Características Principais"
+},
+"proyecto3": {
+  "etiqueta": "Terceiro Projeto",
+  "name": "E-commerce de Tecnologia",
+  "subtitulo": "Loja virtual de tecnologia",
+  "p1": "Desenvolvi uma plataforma de e-commerce para uma loja de tecnologia que precisava de um site robusto e escalável. O objetivo era oferecer não apenas vendas de produtos, mas também uma experiência de compra fluida e segura.",
+  "p2": "A loja possui um catálogo extenso, sistema de busca avançada e filtros que facilitam a navegação. Também implementei um sistema de gerenciamento de estoque e processo de pagamento seguro.",
+  "p3": "O design prioriza a simplicidade e funcionalidade, garantindo que os usuários encontrem o que precisam rapidamente e concluam suas compras com facilidade.",
+  "li1": "Catálogo extenso: Navegação por categorias e produtos.",
+  "li2": "Busca avançada: Filtros por marca, preço e características.",
+  "li3": "Pagamento seguro: Integração com gateways confiáveis.",
+  "li4": "Gestão de estoque: Atualização automática do inventário.",
+  "img": "/src/assets/ecommerce.webp",
+  "imgAlt": "Prévia do projeto E-commerce de Tecnologia",
+  "caracteristicas": "Características Principais"
+},
+"proyecto4": {
+  "etiqueta": "Quarto Projeto",
+  "name": "Beta&Omega",
+  "subtitulo": "Aplicativo para academia online",
+  "p1": "Desenvolvi um aplicativo web para uma academia online que precisava de uma plataforma para gerenciar cursos, alunos e professores. O objetivo era facilitar o ensino e o aprendizado a distância.",
+  "p2": "A aplicação inclui gerenciamento de cursos, acompanhamento de progresso dos alunos, fóruns de discussão e ferramentas de avaliação. Também implementei um sistema de notificações para manter todos informados.",
+  "p3": "O design é focado em acessibilidade e usabilidade, garantindo que todos os usuários consigam navegar com facilidade.",
+  "li1": "Gestão de cursos: Criação e administração de cursos online.",
+  "li2": "Acompanhamento de progresso: Para alunos e professores.",
+  "li3": "Fóruns de discussão: Interação entre alunos e docentes.",
+  "li4": "Sistema de notificações: Alertas sobre novidades e atualizações.",
+  "img": "/src/assets/beta.webp",
+  "imgAlt": "Prévia do projeto Beta",
+  "caracteristicas": "Características Principais"
+},
+"proyecto5": {
+  "etiqueta": "Quinto Projeto",
+  "name": "Nivo",
+  "subtitulo": "Ferramenta web para gestão comercial",
+  "p1": "Nivo é uma ferramenta web que desenvolvi para uma empresa de serviços comerciais. O objetivo era criar uma plataforma que facilitasse a gestão de clientes, vendas e relatórios.",
+  "p2": "A ferramenta inclui funcionalidades como gerenciamento de clientes, acompanhamento de vendas, geração de relatórios e análise de dados. Também implementei autenticação e autorização para garantir segurança da informação.",
+  "p3": "O design é focado na eficiência e funcionalidade, permitindo acesso rápido às informações necessárias.",
+  "li1": "Gestão de clientes: Banco de dados com informações organizadas.",
+  "li2": "Acompanhamento de vendas: Registros e análise de desempenho.",
+  "li3": "Relatórios personalizados: Sobre vendas e clientes.",
+  "li4": "Análise de dados: Ferramentas para visualização e tomada de decisão.",
+  "img": "/src/assets/nivo.webp",
+  "imgAlt": "Prévia do projeto Nivo",
+  "caracteristicas": "Características Principais"
+},
+"proyecto6": {
+  "etiqueta": "Sexto Projeto",
+  "name": "Courtify",
+  "subtitulo": "Gestão de reservas de quadras",
+  "p1": "Courtify é um aplicativo web que desenvolvi para gerenciar reservas de quadras esportivas. O objetivo era criar uma plataforma simples e eficaz para usuários e administradores.",
+  "p2": "O app conta com funcionalidades como calendário de reservas, gerenciamento de usuários, notificações e pagamentos online. Também inclui autenticação para garantir segurança nas transações.",
+  "p3": "O design é pensado na usabilidade e eficiência, facilitando a reserva de quadras de forma rápida.",
+  "li1": "Calendário de reservas: Visualização clara de disponibilidade.",
+  "li2": "Gestão de usuários: Cadastro e administração de contas.",
+  "li3": "Notificações: Alertas sobre reservas e alterações.",
+  "li4": "Pagamentos online: Integração com meios de pagamento seguros.",
+  "img": "/src/assets/courtify.webp",
+  "imgAlt": "Prévia do projeto Courtify",
+  "caracteristicas": "Características Principais"
+}
+
+}
 }

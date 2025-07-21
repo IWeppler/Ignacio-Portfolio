@@ -4,32 +4,68 @@ import { t, getValidLang } from '../../utils/i18n';
 
 const { lang } = Astro.params;
 const langCode = getValidLang(lang);
+const currentPath = Astro.url.pathname;
+
+const supportedLangs = [
+  { code: "es", label: "ES" },
+  { code: "en", label: "EN" },
+  { code: "pt", label: "PT" },
+];
+
+const getLangUrl = (targetLang: string) => {
+  const pathParts = currentPath.split('/').filter(p => p);
+  if (supportedLangs.some(l => l.code === pathParts[0])) {
+    pathParts.shift(); 
+  }
+  const base = targetLang === 'es' ? '' : `/${targetLang}`;
+  return `${base}/${pathParts.join('/')}`;
+};
+
+const homeUrl = langCode === 'es' ? '/' : `/${langCode}/`;
+const projectsUrl = `${homeUrl}#proyectos`;
+const contactUrl = `${homeUrl}#contacto`;
 ---
 
 <header class={styles.navbar}>
   <nav class={styles.navbar}>
-    <a href="/#inicio" class={styles.navLink}>{t(langCode, "navbar.link-a")}</a>
-    <a href="/#proyectos" class={styles.navLink}>{t(langCode, "navbar.link-b")}</a>
-    <a href="/#contacto" class={styles.navLink}>{t(langCode, "navbar.link-c")}</a>
+    <a href={homeUrl} class={styles.navLink}>{t(langCode, "navbar.link-a")}</a>
+    <a href={projectsUrl} class={styles.navLink}>{t(langCode, "navbar.link-b")}</a>
+    <a href={contactUrl} class={styles.navLink}>{t(langCode, "navbar.link-c")}</a>
   </nav>
 
   <div class={styles.languages}>
-  <details class={styles.langDetails}>
-    <summary>{langCode.toUpperCase()}</summary>
-    <ul>
-      <li><a href="/" aria-label="Español">ES</a></li>
-      <li><a href="/en/" aria-label="English">EN</a></li>
-      <li><a href="/pt/" aria-label="Português">PT</a></li>
-    </ul>
-  </details>
-</div>
+    <details class={styles.langDetails}>
+      <summary>{langCode.toUpperCase()}</summary>
+      <ul class={styles.langDropdown}>
+        {supportedLangs.map(lang => (
+          <li>
+            <a 
+              href={getLangUrl(lang.code)} 
+              aria-label={lang.label}
+              onclick={`localStorage.setItem('preferred_lang', '${lang.code}')`}
+            >
+              {lang.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </details>
+  </div>
 </header>
 
 <script is:inline>
-  function handleLanguageChange(event) {
-    const lang = event.target.value;
-    const path = window.location.pathname.replace(/^\/(es|en|pt)/, '');
-    const finalPath = lang === 'es' ? `${path}` : `/${lang}${path}`;
-    window.location.href = finalPath;
-  }
+  (function() {
+    const PREFERRED_LANG_KEY = 'preferred_lang';
+    const supportedLangs = ['en', 'es', 'pt'];
+    const storedLang = localStorage.getItem(PREFERRED_LANG_KEY);
+    const currentUrlLang = window.location.pathname.split('/')[1];
+
+    if (storedLang && supportedLangs.includes(storedLang) && !supportedLangs.includes(currentUrlLang)) {
+      const pathWithoutLang = window.location.pathname;
+      const newPath = storedLang === 'es' ? pathWithoutLang : `/${storedLang}${pathWithoutLang}`;
+      if (window.location.pathname !== newPath) {
+        window.location.pathname = newPath;
+      }
+    }
+  })();
 </script>

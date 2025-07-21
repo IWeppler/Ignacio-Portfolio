@@ -47,5 +47,98 @@
   "footer":{
     "title": "Háblame de tu próximo proyecto",
     "name": "Hecho en 2025 por Ignacio Weppler 🤟"
+  },
+
+  "proyectos": {
+    "proyecto1": {
+      "etiqueta": "Primer Proyecto",
+      "name": "Club Atletico Tostado",
+      "subtitulo": "Digitalizando el corazón deportivo de la región",
+      "p1": "El Club Atlético Tostado, el club más emblemático y grande de la zona, carecía de una presencia digital acorde a su prestigio. Identifiqué esta necesidad y desarrollé una solución integral que transformó la forma en que el club se conecta con sus socios, jugadores y la comunidad.",
+      "p2": "Los objetivos del proyecto fueron; brindar información centralizada sobre horarios, actividades y eventos, permitir la publicación dinámica de noticias y novedades del club, y por último, facilitar la interacción con los socios, ofreciendo un espacio para que puedan registrarse y pagar la mensualidad en línea de manera ágil y segura.",
+      "p3": "Este sitio web no solo modernizó la presencia digital del club, sino que también simplificó procesos administrativos, mejoró la comunicación con los socios y posicionó al Club Atlético Tostado como una institución moderna e innovadora en la región.",
+      "li1": "Interfaz intuitiva y funcional: Pensada tanto para socios como para visitantes.",
+      "li2": "Sistema de noticias: Actualización rápida de novedades...",
+      "li3": "Portal para socios: Registro de usuarios, gestión de membresías y pagos de cuotas online.",
+      "li4": "Horarios y actividades deportivas: Calendarios interactivos con información de entrenamientos, eventos y competiciones.",
+      "img": "/src/assets/tres.webp", 
+      "imgAlt": "Vista previa del proyecto Club Atlético Tostado",
+      "caracteristicas": "Características Principales"
+    },
+    "proyecto2": {
+      "etiqueta": "Segundo Proyecto",
+      "name": "El Trampozo",
+      "subtitulo": "Web app para visibilidad de marca lúdica",
+      "p1": "El Trampozo es una web app que desarrollé para una empresa de trampolines. El objetivo era crear una plataforma que no solo mostrara sus productos, sino que también ofreciera una experiencia interactiva y divertida para los usuarios.",
+      "p2": "La aplicación permite a los usuarios explorar diferentes modelos de trampolines, ver videos de demostración y realizar compras directamente desde la plataforma. Además, incluye un sistema de reservas para eventos y fiestas temáticas.",
+      "p3": "El diseño se centra en la usabilidad y la estética, con un enfoque en la experiencia del usuario. La interfaz es intuitiva y atractiva, lo que facilita la navegación y mejora la interacción con los productos.",
+      "li1": "Exploración interactiva de productos: Los usuarios pueden ver videos y fotos de los trampolines en acción.",
+      "li2": "Sistema de reservas: Permite a los usuarios reservar trampolines para eventos y fiestas.",
+      "li3": "Proceso de compra simplificado: Compra directa desde la web app con opciones de pago seguras.",
+      "li4": "Diseño atractivo y funcional: Enfocado en la experiencia del usuario.",
+      "img": "/src/assets/trampozo.webp",
+      "imgAlt": "Vista previa del proyecto El Trampozo",
+      "caracteristicas": "Características Principales"
+    },
+    "proyecto3": {
+      "etiqueta": "Tercer Proyecto",
+      "name": "E-commerce de Tecnología",
+      "subtitulo": "Tienda online de tecnología",
+      "p1": "Desarrollé un e-commerce para una tienda de tecnología que necesitaba una plataforma robusta y escalable. El objetivo era crear un sitio que no solo vendiera productos, sino que también ofreciera una experiencia de compra fluida y segura.",
+      "p2": "La tienda cuenta con un catálogo extenso de productos, un sistema de búsqueda avanzada y filtros para facilitar la navegación. Además, implementé un sistema de gestión de inventario y un proceso de pago seguro.",
+      "p3": "El diseño se centra en la simplicidad y la funcionalidad, asegurando que los usuarios puedan encontrar lo que buscan rápidamente y realizar sus compras sin complicaciones.",
+      "li1": "Catálogo extenso: Navegación fácil por categorías y productos.",
+      "li2": "Sistema de búsqueda avanzada: Filtros por marca, precio y características.",
+      "li3": "Proceso de pago seguro: Integración con pasarelas de pago confiables.",
+      "li4": "Gestión de inventario: Actualización automática del stock.",
+      "img": "/src/assets/ecommerce.webp",
+      "imgAlt": "Vista previa del proyecto E-commerce de Tecnología",
+      "caracteristicas": "Características Principales"
+    },
+    "proyecto4": {
+      "etiqueta": "Cuarto Proyecto",
+      "name": "Beta&Omega",
+      "subtitulo": "Aplicación para academia online",
+      "p1": "Desarrollé una aplicación web para una academia online que necesitaba una plataforma para gestionar cursos, estudiantes y profesores. El objetivo era crear un sistema que facilitara la enseñanza y el aprendizaje a distancia.",
+      "p2": "La aplicación incluye funcionalidades como gestión de cursos, seguimiento del progreso de los estudiantes, foros de discusión y herramientas de evaluación. Además, implementé un sistema de notificaciones para mantener a los usuarios informados sobre novedades y actualizaciones.",
+      "p3": "El diseño se centra en la accesibilidad y la usabilidad, asegurando que todos los usuarios puedan navegar por la plataforma sin dificultades.",
+      "li1": "Gestión de cursos: Creación y administración de cursos online.",
+      "li2": "Seguimiento del progreso: Herramientas para que estudiantes y profesores puedan monitorear el avance.",
+      "li3": "Foros de discusión: Espacios para interacción entre estudiantes y profesores.",
+      "li4": "Sistema de notificaciones: Alertas sobre novedades y actualizaciones.",
+      "img": "/src/assets/beta.webp",
+      "imgAlt": "Vista previa del proyecto Beta",
+      "caracteristicas": "Características Principales"
+    },
+    "proyecto5": {
+      "etiqueta": "Quinto Proyecto",
+      "name": "Nivo",
+      "subtitulo": "Herramienta web para gestión comercial",
+      "p1": "Nivo es una herramienta web que desarrollé para una empresa de servicios comerciales. El objetivo era crear una plataforma que facilitara la gestión de clientes, ventas y reportes.",
+      "p2": "La herramienta incluye funcionalidades como gestión de clientes, seguimiento de ventas, generación de reportes y análisis de datos. Además, implementé un sistema de autenticación y autorización para garantizar la seguridad de la información.",
+      "p3": "El diseño se centra en la eficiencia y la funcionalidad, asegurando que los usuarios puedan acceder a la información que necesitan rápidamente.",
+      "li1": "Gestión de clientes: Base de datos para almacenar información de clientes.",
+      "li2": "Seguimiento de ventas: Registro de transacciones y análisis de rendimiento.",
+      "li3": "Generación de reportes: Informes personalizables sobre ventas y clientes.",
+      "li4": "Análisis de datos: Herramientas para visualizar y analizar información comercial.",
+      "img": "/src/assets/nivo.webp",
+      "imgAlt": "Vista previa del proyecto Nivo",
+      "caracteristicas": "Características Principales"
+    },
+    "proyecto6": {
+      "etiqueta": "Proyecto Full Stack - Bootcamp Soy Henry",
+      "name": "Courtify",
+      "subtitulo": "App web para administrar reservas en una cancha de fútbol 5.",
+      "p1": "Este fue uno de mis proyectos favoritos durante el bootcamp. Lo desarrollé de manera individual y completamente desde cero como entrega del Módulo 3 en el bootcamp Soy Henry.",
+      "p2": "El objetivo era construir una aplicación web completa que resuelva una necesidad concreta: la administración de turnos en una cancha de fútbol 5. Muchas canchas aún gestionan reservas de manera informal, así que desarrollé una plataforma digital que ofrece una experiencia moderna y ordenada tanto para los clientes como para los administradores.",
+      "p3": "El diseño se centra en la usabilidad y la eficiencia, asegurando que los usuarios puedan reservar canchas de manera rápida y sencilla.",
+      "li1": "Calendario de reservas: Visualización clara de disponibilidad y reservas.",
+      "li2": "Gestión de usuarios: Registro y administración de cuentas de usuarios.",
+      "li3": "Notificaciones: Alertas sobre reservas y cambios en el estado.",
+      "li4": "Pagos en línea: Integración con pasarelas de pago seguras.",
+      "img": "/src/assets/courtify.webp",
+      "imgAlt": "Vista previa del proyecto Courtify",
+      "caracteristicas": "Características Principales"
+    }
   }
 }

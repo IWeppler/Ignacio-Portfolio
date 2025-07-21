@@ -1,0 +1,89 @@
+---
+// src/components/Navbar/LanguageManager.astro
+
+// El componente recibe el idioma actual y la ruta actual como props
+interface Props {
+  langCode: "en" | "es" | "pt";
+  currentPath: string;
+}
+const { langCode, currentPath } = Astro.props;
+
+// Lista de idiomas soportados
+const supportedLangs = [
+  { code: "es", label: "Español" },
+  { code: "en", label: "English" },
+  { code: "pt", label: "Português" },
+];
+
+// Lógica para generar la URL correcta para cada idioma
+const getLangUrl = (targetLang: string) => {
+  // Quitamos el código de idioma actual de la ruta
+  const pathWithoutLang = currentPath.startsWith(`/${langCode}`)
+    ? currentPath.substring(langCode.length + 1)
+    : currentPath;
+  return `/${targetLang}${pathWithoutLang}`;
+};
+---
+
+<div class="language-switcher">
+  {
+    supportedLangs.map((lang) => (
+      <a
+        href={getLangUrl(lang.code)}
+        class:list={[
+          "lang-button",
+          { "is-active": lang.code === langCode },
+        ]}
+        onclick={`localStorage.setItem('preferred_lang', '${lang.code}')`}
+      >
+        {lang.label}
+      </a>
+    ))
+  }
+</div>
+
+<!-- Este script es la clave de la persistencia -->
+<script is:inline>
+  // Esta función se ejecuta en el cliente en cuanto la página carga
+  (function() {
+    const PREFERRED_LANG_KEY = 'preferred_lang';
+    const supportedLangs = ['en', 'es', 'pt'];
+    
+    // Obtenemos el idioma guardado en el navegador
+    const storedLang = localStorage.getItem(PREFERRED_LANG_KEY);
+    
+    // Obtenemos el idioma de la URL actual
+    const currentUrlLang = window.location.pathname.split('/')[1];
+
+    // Si el usuario está en la raíz del sitio (ej: tuweb.com/) y tiene un idioma guardado,
+    // lo redirigimos a la versión en su idioma (ej: tuweb.com/es/)
+    if (storedLang && supportedLangs.includes(storedLang) && currentUrlLang === '') {
+      window.location.pathname = `/${storedLang}`;
+    }
+  })();
+</script>
+
+<style>
+  /* Estilos básicos para el selector de idioma */
+  .language-switcher {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .lang-button {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+  }
+  .lang-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .lang-button.is-active {
+    background-color: var(--second); /* O el color que prefieras para el idioma activo */
+    border-color: var(--second);
+    font-weight: bold;
+  }
+</style>

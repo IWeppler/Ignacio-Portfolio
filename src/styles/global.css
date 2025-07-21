@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Syne:wght@400..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Syne:wght@400..800&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -184,32 +184,27 @@ body {
   }
 
   .wrapperBenefits {
-    flex-direction: column; /* Fuerza los elementos a apilarse verticalmente */
-    align-items: stretch; /* Asegura que los elementos ocupen el ancho completo */
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .wrapperBenefits .benefits {
-    flex: 1 1 100%; /* Cada elemento ocupa el 100% del ancho */
-    max-width: 100%; /* Garante que no haya columnas adicionales */
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 
   .wrapper-benefits {
-    flex-direction: column; /* Apila los 2 divs en móviles */
-    align-items: center; /* Centra los elementos */
+    flex-direction: column;
+    align-items: center;
   }
 
   .wrapper-benefits .benefits {
-    flex: 1 1 100%; /* Cada elemento ocupa el 100% del ancho */
-    max-width: 100%; /* Evita columnas adicionales */
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
 
 @media (max-width: 500px) {
-
-  .subMain h1 {
-    font-size: 80px;
-  }
-
   h3 {
     font-size: 40px;
   }

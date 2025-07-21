@@ -1,38 +1,38 @@
 ---
 export async function getStaticPaths() {
   return [
-    { params: { lang: 'en' } },
-    { params: { lang: 'pt' } },
-    { params: { lang: 'es' } }
+    { params: { lang: "en" } },
+    { params: { lang: "pt" } },
+    { params: { lang: "es" } },
   ];
 }
 
-import Navbar from '../../components/Navbar/Navbar.astro';
-import Welcome from '../../components/Welcome/Welcome.astro';
-import Banner from '../../components/Banner/Banner.astro';
-import AboutMe from '../../components/AboutMe/AboutMe.astro';
-import Works from '../../components/Works/Works.astro';
-import Benefits from '../../components/Benefits/Benefits.astro';
-import Footer from '../../components/Footer/Footer.astro';
-import Layout from '../../layouts/Layout.astro';
+import Navbar from "../../components/Navbar/Navbar.astro";
+import Welcome from "../../components/Welcome/Welcome.astro";
+import Banner from "../../components/Banner/Banner.astro";
+import AboutMe from "../../components/AboutMe/AboutMe.astro";
+import Works from "../../components/Works/Works.astro";
+import Benefits from "../../components/Benefits/Benefits.astro";
+import Footer from "../../components/Footer/Footer.astro";
+import Layout from "../../layouts/Layout.astro";
 
-import { getValidLang } from '../../utils/i18n';
+import { getValidLang } from "../../utils/i18n";
 
 const { lang } = Astro.params;
 const langCode = getValidLang(lang);
 ---
 
-<Layout 
+<Layout
   title="Ignacio Weppler - Desarrollador Web Full Stack"
   description="Portfolio de Ignacio Weppler. Descubrí mis proyectos, habilidades y experiencia como desarrollador especializado en React, Astro, Tailwind y Next.js."
   url="https://ignacioweppler.vercel.dev"
   image="/SEO-ignacio.png"
 >
-	<Navbar langCode={langCode} />
-	<Welcome langCode={langCode} />
-	<Banner langCode={langCode} />
-	<AboutMe langCode={langCode} />
-	<Works langCode={langCode} />
-	<Benefits langCode={langCode} />
-	<Footer langCode={langCode} />
+  <Navbar langCode={langCode} />
+  <Welcome langCode={langCode} />
+  <Banner langCode={langCode} />
+  <AboutMe langCode={langCode} />
+  <Works langCode={langCode} />
+  <Benefits langCode={langCode} />
+  <Footer langCode={langCode} />
 </Layout>

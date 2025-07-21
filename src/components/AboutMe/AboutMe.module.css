@@ -82,7 +82,10 @@ h3 {
   width: 100%;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
+  .firstPart {
+    width: 95%;
+  }
   .wrapperIcons {
     grid-template-columns: repeat(3, 1fr);
     gap: 0.5rem;
