@@ -1,16 +1,26 @@
 {
-  "navbar":{
-    "link-a":"Inicio",
-    "link-b":"Trabajos",
-    "link-c":"Contacto"
+  "navbar": {
+    "link-a": "Inicio",
+    "link-b": "Trabajos",
+    "link-c": "Contacto"
   },
   "welcome": {
     "state": "Disponible para trabajar",
     "btn-cta": "Contactame"
   },
   "palabras": [
-    "DESARROLLAR", "INNOVAR", "IMPULSAR", "RESOLVER", "CREAR",
-    "OPTIMIZAR", "AUTOMATIZAR", "CONECTAR", "INSPIRAR", "COLABORAR", "DISEÑAR", "REVOLUCIONAR"
+    "DESARROLLAR",
+    "INNOVAR",
+    "IMPULSAR",
+    "RESOLVER",
+    "CREAR",
+    "OPTIMIZAR",
+    "AUTOMATIZAR",
+    "CONECTAR",
+    "INSPIRAR",
+    "COLABORAR",
+    "DISEÑAR",
+    "REVOLUCIONAR"
   ],
   "aboutme": {
     "title": "Sobre mí",
@@ -22,16 +32,16 @@
     "cta_label": "Ir a la sección de contacto",
     "cta_text": "¡Hablemos!"
   },
-"works": {
-  "title": "Trabajos",
-  "desc-club": "Sitio institucional para club deportivo",
-  "desc-trampozo": "Web app para visibilidad de marca lúdica",
-  "desc-ecommerce": "Tienda online de tecnología",
-  "desc-beta": "Aplicación para academia online",
-  "desc-nivo": "Herramienta web para gestión comercial",
-  "desc-courtify": "Gestión de reservas de canchas"
+  "works": {
+    "title": "Trabajos",
+    "desc-club": "Sitio institucional para club deportivo",
+    "desc-trampozo": "Web app para visibilidad de marca lúdica",
+    "desc-ecommerce": "Tienda online de tecnología",
+    "desc-beta": "Aplicación para academia online",
+    "desc-nivo": "Herramienta web para gestión comercial",
+    "desc-courtify": "Gestión de reservas de canchas"
   },
-  "benefits":{
+  "benefits": {
     "title": "Cómo hago la diferencia",
     "title-card1": "Diseño atractivo",
     "p-card1": "Diseño tu página alineada con la identidad de tu marca, para que genere confianza desde el primer click.",
@@ -44,7 +54,7 @@
     "title-card5": "Adaptable a todos los dispositivos",
     "p-card5": "Tu web se verá increíble en celulares, tablets y computadoras."
   },
-  "footer":{
+  "footer": {
     "title": "Háblame de tu próximo proyecto",
     "name": "Hecho en 2025 por Ignacio Weppler 🤟"
   },
@@ -61,7 +71,7 @@
       "li2": "Sistema de noticias: Actualización rápida de novedades...",
       "li3": "Portal para socios: Registro de usuarios, gestión de membresías y pagos de cuotas online.",
       "li4": "Horarios y actividades deportivas: Calendarios interactivos con información de entrenamientos, eventos y competiciones.",
-      "img": "/src/assets/tres.webp", 
+      "img": "/src/assets/tres.webp",
       "imgAlt": "Vista previa del proyecto Club Atlético Tostado",
       "caracteristicas": "Características Principales"
     },
@@ -97,7 +107,7 @@
     },
     "proyecto4": {
       "etiqueta": "Cuarto Proyecto",
-      "name": "Beta&Omega",
+      "name": "Beta & Omega",
       "subtitulo": "Aplicación para academia online",
       "p1": "Desarrollé una aplicación web para una academia online que necesitaba una plataforma para gestionar cursos, estudiantes y profesores. El objetivo era crear un sistema que facilitara la enseñanza y el aprendizaje a distancia.",
       "p2": "La aplicación incluye funcionalidades como gestión de cursos, seguimiento del progreso de los estudiantes, foros de discusión y herramientas de evaluación. Además, implementé un sistema de notificaciones para mantener a los usuarios informados sobre novedades y actualizaciones.",
@@ -112,7 +122,7 @@
     },
     "proyecto5": {
       "etiqueta": "Quinto Proyecto",
-      "name": "Nivo",
+      "name": "Nivo POS",
       "subtitulo": "Herramienta web para gestión comercial",
       "p1": "Nivo es una herramienta web que desarrollé para una empresa de servicios comerciales. El objetivo era crear una plataforma que facilitara la gestión de clientes, ventas y reportes.",
       "p2": "La herramienta incluye funcionalidades como gestión de clientes, seguimiento de ventas, generación de reportes y análisis de datos. Además, implementé un sistema de autenticación y autorización para garantizar la seguridad de la información.",
