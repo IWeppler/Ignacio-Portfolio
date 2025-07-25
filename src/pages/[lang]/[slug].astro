@@ -5,13 +5,13 @@ import Footer from "../../components/Footer/Footer.astro";
 import { Image } from "astro:assets";
 
 //IMAGENES
-import uno from "../../assets/uno.webp";
-import unob from "../../assets/unob.webp";
 import dos from "../../assets/dos.webp";
 import tres from "../../assets/tres.webp";
-import cuatro from "../../assets/cuatro.webp";
-import astronivo from "../../assets/astronivo.webp";
+import mockupnivo1 from "../../assets/mockupnivo1.png";
+import mockupnivo2 from "../../assets/mockupnivo2.png";
 import figmanivo from "../../assets/figmanivo.webp";
+import mockupsos from "../../assets/mockupsos.png";
+import mockupsos2 from "../../assets/mockupsos2.png";
 import courtify from "../../assets/courtify.webp";
 import courtifyb from "../../assets/courtifyb.webp";
 import courtifyc from "../../assets/courtifyc.webp";
@@ -70,8 +70,8 @@ const imageMap = {
   proyecto1: { img1: tres, img2: tres },
   proyecto2: { img1: dos, img2: dos },
   proyecto3: { img1: modulo4henry, img2: modulo4henryb },
-  proyecto4: { img1: unob, img2: uno },
-  proyecto5: { img1: astronivo, img2: figmanivo },
+  proyecto4: { img1: mockupsos, img2: mockupsos2 },
+  proyecto5: { img1: mockupnivo1, img2: mockupnivo2, img3: figmanivo },
   proyecto6: { img1: courtify, img2: courtifyb, img3: courtifyc },
 };
 
@@ -110,6 +110,8 @@ const imagenes = imageMap[typedSlug];
         <img
           src={imagenes.img1.src}
           alt={proyecto.imgAlt ?? "Imagen del proyecto"}
+          height={500}
+          width={500}
         />
         <p>{proyecto.p2}</p>
         <br />
@@ -123,6 +125,8 @@ const imagenes = imageMap[typedSlug];
         <img
           src={imagenes.img2.src}
           alt={proyecto.imgAlt ?? "Imagen adicional del proyecto"}
+          height={500}
+          width={500}
         />
         <p>{proyecto.p3}</p>
       </div>

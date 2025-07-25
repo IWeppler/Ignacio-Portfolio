@@ -1,7 +1,7 @@
 {
   "navbar": {
     "link-a": "Inicio",
-    "link-b": "Trabajos",
+    "link-b": "Proyectos",
     "link-c": "Contacto"
   },
   "welcome": {
@@ -33,7 +33,7 @@
     "cta_text": "¡Hablemos!"
   },
   "works": {
-    "title": "Trabajos",
+    "title": "Proyectos",
     "desc-club": "Sitio institucional para club deportivo",
     "desc-trampozo": "Web app para visibilidad de marca lúdica",
     "desc-ecommerce": "Tienda online de tecnología",
