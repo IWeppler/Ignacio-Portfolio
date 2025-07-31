@@ -61,7 +61,7 @@
 
   "proyectos": {
     "proyecto1": {
-      "etiqueta": "First Project",
+      "etiqueta": "Institutional website",
       "name": "Club Atlético Tostado",
       "subtitulo": "Digitizing the region's sports heartbeat",
       "p1": "Club Atlético Tostado, the most iconic and largest sports club in the area, lacked a digital presence that matched its prestige. I identified this need and developed a comprehensive solution that transformed how the club connects with its members, players, and community.",
@@ -76,7 +76,7 @@
       "caracteristicas": "Main Features"
     },
     "proyecto2": {
-      "etiqueta": "Second Project",
+      "etiqueta": "Promotional website",
       "name": "El Trampozo",
       "subtitulo": "Web app for playful brand visibility",
       "p1": "El Trampozo is a web app I developed for a trampoline company. The goal was to create a platform that not only showcased their products but also offered an interactive and fun experience for users.",
@@ -91,7 +91,7 @@
       "caracteristicas": "Main Features"
     },
     "proyecto3": {
-      "etiqueta": "Third Project",
+      "etiqueta": "E-commerce",
       "name": "Technology E-commerce",
       "subtitulo": "Online tech store",
       "p1": "I developed an e-commerce platform for a tech store that needed a robust and scalable site. The goal was to create a site that not only sold products but also offered a smooth and secure shopping experience.",
@@ -106,7 +106,7 @@
       "caracteristicas": "Main Features"
     },
     "proyecto4": {
-      "etiqueta": "Fourth Project",
+      "etiqueta": "Educational web app",
       "name": "Beta & Omega",
       "subtitulo": "Application for online academy",
       "p1": "I developed a web application for an online academy that needed a platform to manage courses, students, and teachers. The goal was to create a system that facilitated distance teaching and learning.",
@@ -121,7 +121,7 @@
       "caracteristicas": "Main Features"
     },
     "proyecto5": {
-      "etiqueta": "Fifth Project",
+      "etiqueta": "Commercial management SaaS",
       "name": "Nivo POS",
       "subtitulo": "Web tool for business management",
       "p1": "Nivo is a web tool I developed for a commercial services company. The goal was to create a platform that streamlined client, sales, and report management.",
@@ -136,7 +136,7 @@
       "caracteristicas": "Main Features"
     },
     "proyecto6": {
-      "etiqueta": "Sixth Project",
+      "etiqueta": "Full Stack Project - Soy Henry Bootcamp",
       "name": "Courtify",
       "subtitulo": "Court reservation management",
       "p1": "Courtify is a web application I developed to manage sports court reservations. The goal was to create a platform that made it easy for both users and administrators to book and manage courts.",

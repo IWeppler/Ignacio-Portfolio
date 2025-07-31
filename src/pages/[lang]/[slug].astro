@@ -115,12 +115,13 @@ const imagenes = imageMap[typedSlug];
         />
         <p>{proyecto.p2}</p>
         <br />
-        <h3>{proyecto.caracteristicas ?? "Características principales"}</h3>
+        <h3 class="text-xl justify-start mb-2 text-white">{proyecto.caracteristicas ?? "Características principales"}</h3>
         <ul>
-          <li>{proyecto.li1}</li>
-          <li>{proyecto.li2}</li>
-          <li>{proyecto.li3}</li>
-          {proyecto.li4 && <li>{proyecto.li4}</li>}
+          <li>- {proyecto.li1}</li>
+          <li>- {proyecto.li2}</li>
+          <li>- {proyecto.li3}</li>
+          {proyecto.li4 && 
+          <li>- {proyecto.li4}</li>}
         </ul>
         <img
           src={imagenes.img2.src}
@@ -129,6 +130,10 @@ const imagenes = imageMap[typedSlug];
           width={500}
         />
         <p>{proyecto.p3}</p>
+        
+
+        <!-- LINKS DE GITHUB Y WEB -->
+         
       </div>
     </div>
   </section>

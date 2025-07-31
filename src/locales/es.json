@@ -61,7 +61,7 @@
 
   "proyectos": {
     "proyecto1": {
-      "etiqueta": "Primer Proyecto",
+      "etiqueta": "Web Institucional",
       "name": "Club Atletico Tostado",
       "subtitulo": "Digitalizando el corazón deportivo de la región",
       "p1": "El Club Atlético Tostado, el club más emblemático y grande de la zona, carecía de una presencia digital acorde a su prestigio. Identifiqué esta necesidad y desarrollé una solución integral que transformó la forma en que el club se conecta con sus socios, jugadores y la comunidad.",
@@ -76,7 +76,7 @@
       "caracteristicas": "Características Principales"
     },
     "proyecto2": {
-      "etiqueta": "Segundo Proyecto",
+      "etiqueta": "Web Promocional",
       "name": "El Trampozo",
       "subtitulo": "Web app para visibilidad de marca lúdica",
       "p1": "El Trampozo es una web app que desarrollé para una empresa de trampolines. El objetivo era crear una plataforma que no solo mostrara sus productos, sino que también ofreciera una experiencia interactiva y divertida para los usuarios.",
@@ -91,7 +91,7 @@
       "caracteristicas": "Características Principales"
     },
     "proyecto3": {
-      "etiqueta": "Tercer Proyecto",
+      "etiqueta": "E-commerce",
       "name": "E-commerce de Tecnología",
       "subtitulo": "Tienda online de tecnología",
       "p1": "Desarrollé un e-commerce para una tienda de tecnología que necesitaba una plataforma robusta y escalable. El objetivo era crear un sitio que no solo vendiera productos, sino que también ofreciera una experiencia de compra fluida y segura.",
@@ -106,7 +106,7 @@
       "caracteristicas": "Características Principales"
     },
     "proyecto4": {
-      "etiqueta": "Cuarto Proyecto",
+      "etiqueta": "Web App Educativa",
       "name": "Beta & Omega",
       "subtitulo": "Aplicación para academia online",
       "p1": "Desarrollé una aplicación web para una academia online que necesitaba una plataforma para gestionar cursos, estudiantes y profesores. El objetivo era crear un sistema que facilitara la enseñanza y el aprendizaje a distancia.",
@@ -121,7 +121,7 @@
       "caracteristicas": "Características Principales"
     },
     "proyecto5": {
-      "etiqueta": "Quinto Proyecto",
+      "etiqueta": "SaaS de Gestión Comercial",
       "name": "Nivo POS",
       "subtitulo": "Herramienta web para gestión comercial",
       "p1": "Nivo es una herramienta web que desarrollé para una empresa de servicios comerciales. El objetivo era crear una plataforma que facilitara la gestión de clientes, ventas y reportes.",

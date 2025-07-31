@@ -61,7 +61,7 @@
 
   "proyectos": {
     "proyecto1": {
-      "etiqueta": "Primeiro Projeto",
+      "etiqueta": "Site Institucional",
       "name": "Club Atlético Tostado",
       "subtitulo": "Digitalizando o coração esportivo da região",
       "p1": "O Club Atlético Tostado, o clube esportivo mais icônico e importante da região, não tinha uma presença digital à altura de seu prestígio. Identifiquei essa necessidade e desenvolvi uma solução completa que transformou a forma como o clube se conecta com seus sócios, jogadores e comunidade.",
@@ -76,7 +76,7 @@
       "caracteristicas": "Características Principais"
     },
     "proyecto2": {
-      "etiqueta": "Segundo Projeto",
+      "etiqueta": "Site promocional",
       "name": "El Trampozo",
       "subtitulo": "Web app para visibilidade de marca lúdica",
       "p1": "El Trampozo é um aplicativo web que desenvolvi para uma empresa de trampolins. O objetivo era criar uma plataforma que não apenas mostrasse seus produtos, mas também oferecesse uma experiência interativa e divertida para os usuários.",
@@ -91,7 +91,7 @@
       "caracteristicas": "Características Principais"
     },
     "proyecto3": {
-      "etiqueta": "Terceiro Projeto",
+      "etiqueta": "E-Commerce",
       "name": "E-commerce de Tecnologia",
       "subtitulo": "Loja virtual de tecnologia",
       "p1": "Desenvolvi uma plataforma de e-commerce para uma loja de tecnologia que precisava de um site robusto e escalável. O objetivo era oferecer não apenas vendas de produtos, mas também uma experiência de compra fluida e segura.",
@@ -106,7 +106,7 @@
       "caracteristicas": "Características Principais"
     },
     "proyecto4": {
-      "etiqueta": "Quarto Projeto",
+      "etiqueta": "Aplicativo web educacional",
       "name": "Beta & Omega",
       "subtitulo": "Aplicativo para academia online",
       "p1": "Desenvolvi um aplicativo web para uma academia online que precisava de uma plataforma para gerenciar cursos, alunos e professores. O objetivo era facilitar o ensino e o aprendizado a distância.",
@@ -121,7 +121,7 @@
       "caracteristicas": "Características Principais"
     },
     "proyecto5": {
-      "etiqueta": "Quinto Projeto",
+      "etiqueta": "SaaS de gestão comercial",
       "name": "Nivo POS",
       "subtitulo": "Ferramenta web para gestão comercial",
       "p1": "Nivo é uma ferramenta web que desenvolvi para uma empresa de serviços comerciais. O objetivo era criar uma plataforma que facilitasse a gestão de clientes, vendas e relatórios.",
@@ -136,7 +136,7 @@
       "caracteristicas": "Características Principais"
     },
     "proyecto6": {
-      "etiqueta": "Sexto Projeto",
+      "etiqueta": "Projeto Full Stack - Bootcamp Soy Henry",
       "name": "Courtify",
       "subtitulo": "Gestão de reservas de quadras",
       "p1": "Courtify é um aplicativo web que desenvolvi para gerenciar reservas de quadras esportivas. O objetivo era criar uma plataforma simples e eficaz para usuários e administradores.",

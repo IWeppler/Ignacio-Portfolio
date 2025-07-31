@@ -1,5 +1,5 @@
-/* PAGINA PRINCIPAL */
 main {
+  position: relative;
   color: var(--second);
   display: flex;
   margin: auto;
@@ -7,6 +7,7 @@ main {
   width: 90%;
   align-items: center;
   text-align: center;
+  overflow: hidden;
 }
 
 .subMain {
@@ -142,4 +143,69 @@ main {
 .firstBtn:hover {
   background: var(--background);
   color: var(--second);
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+      circle at center,
+      rgba(12, 18, 23, 0.2) 0%,
+      rgba(12, 18, 23, 0.6) 60%,
+      rgba(12, 18, 23, 1) 100%
+    ),
+    url("/src/assets/bg.png") no-repeat center;
+  background-size: 600px auto; /* Tu imagen cuadrada de fondo */
+  opacity: 0.4;
+  pointer-events: none;
+
+  mask-image: radial-gradient(circle at center, black 25%, transparent 50%);
+  -webkit-mask-image: radial-gradient(
+    circle at center,
+    black 25%,
+    transparent 50%
+  );
+}
+
+/* --- ANIMACIONES DE ENTRADA --- */
+
+/* 1. Definimos la animación que usaremos */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* El elemento empieza 20px más abajo */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Vuelve a su posición original */
+  }
+}
+
+/* 2. Preparamos los elementos para ser animados */
+.subMain small,
+.subMain h1,
+.status,
+.containerBtn {
+  /* Ocultamos los elementos al inicio */
+  opacity: 0;
+  /* Hacemos que la animación se aplique y se quede en su estado final */
+  animation-fill-mode: forwards;
+}
+
+/* 3. Aplicamos la animación a cada elemento con un retraso diferente */
+.status {
+  animation: fadeInUp 0.5s ease-out 0.2s forwards; /* <-- Agregá forwards aquí */
+}
+
+.subMain small {
+  animation: fadeInUp 0.5s ease-out 0.4s forwards; /* <-- Y aquí */
+}
+
+.subMain h1 {
+  animation: fadeInUp 0.5s ease-out 0.6s forwards; /* <-- Y aquí */
+}
+
+.containerBtn {
+  animation: fadeInUp 0.5s ease-out 0.8s forwards; /* <-- Y aquí */
 }
