@@ -1,4 +1,4 @@
-main {
+.inicio {
   position: relative;
   color: var(--second);
   display: flex;
@@ -19,7 +19,6 @@ main {
   margin: auto;
 }
 
-/* BOTON DISPONIBLE PARA TRABAJAR */
 .status {
   display: flex;
   align-items: center;
@@ -85,13 +84,12 @@ main {
     margin-bottom: 1rem;
   }
   .subMain h1 {
-    font-size: 65px;
+    font-size: 60px;
     line-height: 1;
   }
 }
 
 .iconContainer {
-  /* background: var(--complementario); */
   width: 50px;
   height: 50px;
   border-radius: 30px;
@@ -145,7 +143,7 @@ main {
   color: var(--second);
 }
 
-main::before {
+.inicio::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -156,7 +154,7 @@ main::before {
       rgba(12, 18, 23, 1) 100%
     ),
     url("/src/assets/bg.png") no-repeat center;
-  background-size: 600px auto; /* Tu imagen cuadrada de fondo */
+  background-size: 600px auto; 
   opacity: 0.4;
   pointer-events: none;
 
@@ -168,44 +166,37 @@ main::before {
   );
 }
 
-/* --- ANIMACIONES DE ENTRADA --- */
-
-/* 1. Definimos la animación que usaremos */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px); /* El elemento empieza 20px más abajo */
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
-    transform: translateY(0); /* Vuelve a su posición original */
+    transform: translateY(0);
   }
 }
 
-/* 2. Preparamos los elementos para ser animados */
 .subMain small,
 .subMain h1,
 .status,
 .containerBtn {
-  /* Ocultamos los elementos al inicio */
   opacity: 0;
-  /* Hacemos que la animación se aplique y se quede en su estado final */
   animation-fill-mode: forwards;
 }
 
-/* 3. Aplicamos la animación a cada elemento con un retraso diferente */
 .status {
-  animation: fadeInUp 0.5s ease-out 0.2s forwards; /* <-- Agregá forwards aquí */
+  animation: fadeInUp 0.5s ease-out 0.2s forwards;
 }
 
 .subMain small {
-  animation: fadeInUp 0.5s ease-out 0.4s forwards; /* <-- Y aquí */
+  animation: fadeInUp 0.5s ease-out 0.4s forwards;
 }
 
 .subMain h1 {
-  animation: fadeInUp 0.5s ease-out 0.6s forwards; /* <-- Y aquí */
+  animation: fadeInUp 0.5s ease-out 0.6s forwards;
 }
 
 .containerBtn {
-  animation: fadeInUp 0.5s ease-out 0.8s forwards; /* <-- Y aquí */
+  animation: fadeInUp 0.5s ease-out 0.8s forwards;
 }

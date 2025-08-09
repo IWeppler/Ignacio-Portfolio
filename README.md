@@ -6,6 +6,7 @@ Aquí muestro mis proyectos más destacados, tecnologías que utilizo y mi forma
 ---
 
 ## 🚀 Tecnologías principales
+
 - **Frontend:** React, Next.js, Tailwind CSS, Astro
 - **Backend:** Nest.js, Node.js
 - **Base de datos:** MongoDB / PostgreSQL
@@ -14,27 +15,30 @@ Aquí muestro mis proyectos más destacados, tecnologías que utilizo y mi forma
 ---
 
 ## 📂 Proyectos destacados en el portfolio
+
 - **Club Atlético Tostado** – Sitio web institucional y portal para socios.
 - **El Trampozo** – Plataforma web promocional con estadísticas para un juego de mesa.
 - **Nivo POS** – Sistema de punto de venta moderno y escalable.
 - **Courtify** – Gestión de reservas para canchas deportivas.
-- *(y más…)*
+- _(y más…)_
 
 ---
 
 ## 🖥️ Vista previa
+
 Puedes visitar el portfolio online aquí:  
 🔗 [ignacioweppler.vercel.app](https://ignacioweppler.vercel.app/)
 
 ---
 
 ## 📦 Instalación y ejecución local
+
 1. Clonar el repositorio:
    ```bash
    git clone https://github.com/usuario/nombre-del-repo.git
+   ```
 
-
-   📬 Contacto
+##📬 Contacto
 🌎 Web: ignacioweppler.vercel.app
 📧 Email: ignacionweppler@gmail.com
 💼 LinkedIn: linkedin.com/in/ignacioweppler
