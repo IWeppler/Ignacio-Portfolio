@@ -5,7 +5,7 @@ import tres from "../../assets/tres.webp";
 import modulo4henry from "../../assets/modulo4henry.webp";
 import mockupnivo1 from "../../assets/mockupnivo1.png";
 import courtify from "../../assets/courtify.webp";
-import Image from "astro:assets";
+import { Image } from "astro:assets";
 
 import { t, getValidLang } from "../../utils/i18n";
 import en from "../../locales/en.json";
@@ -39,43 +39,48 @@ const proyectos: Record<string, Proyecto> = locale.proyectos;
   style="padding: 8px; padding-bottom: 10rem"
 >
   <div class="mb-6">
-    <h3 class="text-3xl font-bold text-white">{t(langCode, "works.title")}</h3>
+    <h3 class="text-3xl font-bold text-white">{t(langCode, "works.title")}</h2>
   </div>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 p-4">
     {
-      Object.entries(proyectos).map(([slug, proyecto]) => (
-        <div>
-          <a href={`/${langCode}/${slug}`}>
-            <div class="relative w-full aspect-[1.2/1] min-h-[327px] rounded-2xl overflow-hidden cursor-pointer group">
-              <div class="absolute inset-0 bg-black/70 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-400 rounded-2xl z-10" />
+      Object.entries(proyectos).map(([slug, proyecto]) => {
+        const image = imageMap[slug as keyof typeof imageMap];
+        return (
+          <a 
+            href={`/${langCode}/${slug}`}
+            class="relative w-full aspect-[1.2/1] min-h-[327px] rounded-2xl overflow-hidden cursor-pointer group block"
+          >
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10" />
 
-              <div class="absolute top-3 right-3 z-20 opacity-0 group-hover:opacity-100 transform group-hover:scale-100 scale-95 transition duration-300">
-                <div class="w-[42px] h-[42px] bg-[var(--second)] border-2 border-[var(--second)] rounded-full flex items-center justify-center">
-                  <i class="ri-arrow-right-up-line text-[var(--background)] text-xl" />
-                </div>
-              </div>
-
-              <img
-                src={imageMap[slug as keyof typeof imageMap].src}
-                alt={`${proyecto.name} - ${proyecto?.subtitulo}`}
-                loading="lazy"
-                class="w-full h-full object-cover rounded-2xl"
-              />
-
-              <div class="absolute bottom-5 left-5 opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2 transition duration-400 z-20">
-                <h5 class="text-[1.7rem] font-semibold text-[var(--second)] mb-2">
-                  {proyecto?.name}
-                </h5>
-
-                <small class="text-[1.1rem] text-[var(--second)]">
-                  {proyecto?.subtitulo}
-                </small>
+            <div class="absolute top-3 right-3 z-20 opacity-0 group-hover:opacity-100 transform group-hover:scale-100 scale-95 transition duration-300">
+              <div class="w-[42px] h-[42px] bg-[var(--second)] border-2 border-[var(--second)] rounded-full flex items-center justify-center">
+                <i class="ri-arrow-right-up-line text-[var(--background)] text-xl" />
               </div>
             </div>
+
+            <Image
+                src={image} 
+                alt={`${proyecto.name} - ${proyecto?.subtitulo}`}
+                width={image.width} 
+                height={image.height} 
+                loading="lazy"
+                class="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-transform duration-400"
+              />
+
+            {/* Always visible project info */}
+            <div class="absolute bottom-5 left-5 z-20">
+              <h4 class="text-[1.7rem] font-semibold text-[var(--second)] mb-2">
+                {proyecto?.name}
+              </h4>
+
+              <p class="text-[1.1rem] text-[var(--second)]">
+                {proyecto?.subtitulo}
+              </p>
+            </div>
           </a>
-        </div>
-      ))
+        )
+      })
     }
   </div>
 </section>
