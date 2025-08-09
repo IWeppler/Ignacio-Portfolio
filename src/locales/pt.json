@@ -73,7 +73,9 @@
       "li4": "Horários e atividades esportivas: Calendários interativos com treinos, eventos e competições.",
       "img": "/src/assets/tres.webp",
       "imgAlt": "Prévia do projeto Club Atlético Tostado",
-      "caracteristicas": "Características Principais"
+      "caracteristicas": "Características Principais",
+      "github": "https://github.com/IWeppler/AtleticoTostado",
+      "deploy": "https://atleticotostado.vercel.app/"
     },
     "proyecto2": {
       "etiqueta": "Site promocional",
@@ -103,7 +105,9 @@
       "li4": "Gestão de estoque: Atualização automática do inventário.",
       "img": "/src/assets/ecommerce.webp",
       "imgAlt": "Prévia do projeto E-commerce de Tecnologia",
-      "caracteristicas": "Características Principais"
+      "caracteristicas": "Características Principais",
+      "github": "https://github.com/IWeppler/PM4FE",
+      "deploy": "https://pm-4-fe-pi.vercel.app/"
     },
     "proyecto4": {
       "etiqueta": "Aplicativo web educacional",
@@ -118,7 +122,9 @@
       "li4": "Sistema de notificações: Alertas sobre novidades e atualizações.",
       "img": "/src/assets/beta.webp",
       "imgAlt": "Prévia do projeto Beta",
-      "caracteristicas": "Características Principais"
+      "caracteristicas": "Características Principais",
+      "github": "https://github.com/IWeppler/BetaOmega",
+      "deploy": "https://betaomega.vercel.app/"
     },
     "proyecto5": {
       "etiqueta": "SaaS de gestão comercial",
@@ -133,7 +139,9 @@
       "li4": "Análise de dados: Ferramentas para visualização e tomada de decisão.",
       "img": "/src/assets/nivo.webp",
       "imgAlt": "Prévia do projeto Nivo",
-      "caracteristicas": "Características Principais"
+      "caracteristicas": "Características Principais",
+      "github": "https://github.com/DreamTeeam/front",
+      "deploy": "https://nivoapp.vercel.app/"
     },
     "proyecto6": {
       "etiqueta": "Projeto Full Stack - Bootcamp Soy Henry",

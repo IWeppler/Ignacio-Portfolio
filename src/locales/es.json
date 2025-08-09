@@ -73,7 +73,9 @@
       "li4": "Horarios y actividades deportivas: Calendarios interactivos con información de entrenamientos, eventos y competiciones.",
       "img": "/src/assets/tres.webp",
       "imgAlt": "Vista previa del proyecto Club Atlético Tostado",
-      "caracteristicas": "Características Principales"
+      "caracteristicas": "Características Principales",
+      "github": "https://github.com/IWeppler/AtleticoTostado",
+      "deploy": "https://atleticotostado.vercel.app/"
     },
     "proyecto2": {
       "etiqueta": "Web Promocional",
@@ -103,7 +105,9 @@
       "li4": "Gestión de inventario: Actualización automática del stock.",
       "img": "/src/assets/ecommerce.webp",
       "imgAlt": "Vista previa del proyecto E-commerce de Tecnología",
-      "caracteristicas": "Características Principales"
+      "caracteristicas": "Características Principales",
+      "github": "https://github.com/IWeppler/PM4FE",
+      "deploy": "https://pm-4-fe-pi.vercel.app/"
     },
     "proyecto4": {
       "etiqueta": "Web App Educativa",
@@ -118,7 +122,9 @@
       "li4": "Sistema de notificaciones: Alertas sobre novedades y actualizaciones.",
       "img": "/src/assets/beta.webp",
       "imgAlt": "Vista previa del proyecto Beta",
-      "caracteristicas": "Características Principales"
+      "caracteristicas": "Características Principales",
+      "github": "https://github.com/IWeppler/BetaOmega",
+      "deploy": "https://betaomega.vercel.app/"
     },
     "proyecto5": {
       "etiqueta": "SaaS de Gestión Comercial",
@@ -133,7 +139,9 @@
       "li4": "Análisis de datos: Herramientas para visualizar y analizar información comercial.",
       "img": "/src/assets/nivo.webp",
       "imgAlt": "Vista previa del proyecto Nivo",
-      "caracteristicas": "Características Principales"
+      "caracteristicas": "Características Principales",
+      "github": "https://github.com/DreamTeeam/front",
+      "deploy": "https://nivoapp.vercel.app/"
     },
     "proyecto6": {
       "etiqueta": "Proyecto Full Stack - Bootcamp Soy Henry",

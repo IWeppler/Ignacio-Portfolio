@@ -71,7 +71,7 @@
       "li2": "News system: Quick update of club news, with an adaptable and easy-to-manage structure.",
       "li3": "Member portal: User registration, membership management, and online payments.",
       "li4": "Sports schedules and activities: Interactive calendars with information on training, events, and competitions.",
-      "img": "/src/assets/tres.webp",
+      "img": "/src/assets/cat.webp",
       "imgAlt": "Preview of the Club Atlético Tostado project",
       "caracteristicas": "Main Features"
     },
@@ -88,7 +88,9 @@
       "li4": "Attractive and functional design: Focused on user experience.",
       "img": "/src/assets/trampozo.webp",
       "imgAlt": "Preview of the El Trampozo project",
-      "caracteristicas": "Main Features"
+      "caracteristicas": "Main Features",
+      "github": "https://github.com/IWeppler/AtleticoTostado",
+      "deploy": "https://atleticotostado.vercel.app/"
     },
     "proyecto3": {
       "etiqueta": "E-commerce",
@@ -103,7 +105,9 @@
       "li4": "Inventory management: Automatic stock updates.",
       "img": "/src/assets/ecommerce.webp",
       "imgAlt": "Preview of the Technology E-commerce project",
-      "caracteristicas": "Main Features"
+      "caracteristicas": "Main Features",
+      "github": "https://github.com/IWeppler/PM4FE",
+      "deploy": "https://pm-4-fe-pi.vercel.app/"
     },
     "proyecto4": {
       "etiqueta": "Educational web app",
@@ -118,7 +122,9 @@
       "li4": "Notification system: Alerts about updates and news.",
       "img": "/src/assets/beta.webp",
       "imgAlt": "Preview of the Beta project",
-      "caracteristicas": "Main Features"
+      "caracteristicas": "Main Features",
+      "github": "https://github.com/IWeppler/BetaOmega",
+      "deploy": "https://betaomega.vercel.app/"
     },
     "proyecto5": {
       "etiqueta": "Commercial management SaaS",
@@ -133,7 +139,9 @@
       "li4": "Data analysis: Tools to visualize and analyze business information.",
       "img": "/src/assets/nivo.webp",
       "imgAlt": "Preview of the Nivo project",
-      "caracteristicas": "Main Features"
+      "caracteristicas": "Main Features",
+      "github": "https://github.com/DreamTeeam/front",
+      "deploy": "https://nivoapp.vercel.app/"
     },
     "proyecto6": {
       "etiqueta": "Full Stack Project - Soy Henry Bootcamp",

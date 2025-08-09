@@ -1,7 +1,7 @@
 ---
 import mockupsos from "../../assets/mockupsos.png";
 import dos from "../../assets/dos.webp";
-import tres from "../../assets/tres.webp";
+import cat from "../../assets/cat.webp";
 import modulo4henry from "../../assets/modulo4henry.webp";
 import mockupnivo1 from "../../assets/mockupnivo1.png";
 import courtify from "../../assets/courtify.webp";
@@ -16,7 +16,7 @@ const { lang } = Astro.params;
 const langCode = getValidLang(lang);
 
 const imageMap = {
-  proyecto1: tres,
+  proyecto1: cat,
   proyecto2: dos,
   proyecto3: modulo4henry,
   proyecto4: mockupsos,
@@ -65,19 +65,17 @@ const proyectos: Record<string, Proyecto> = locale.proyectos;
                 width={image.width} 
                 height={image.height} 
                 loading="lazy"
-                class="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-transform duration-400"
+                class="w-full h-full object-cover rounded-2xl group-hover:scale-105 group-hover:blur-xs transition-all duration-400"
               />
 
-            {/* Always visible project info */}
-            <div class="absolute bottom-5 left-5 z-20">
-              <h4 class="text-[1.7rem] font-semibold text-[var(--second)] mb-2">
-                {proyecto?.name}
-              </h4>
-
-              <p class="text-[1.1rem] text-[var(--second)]">
-                {proyecto?.subtitulo}
-              </p>
-            </div>
+<div class="absolute bottom-5 left-5 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+  <h4 class="text-[1.7rem] font-semibold text-[var(--second)] mb-2">
+    {proyecto?.name}
+  </h4>
+  <p class="text-[1.1rem] text-[var(--second)]">
+    {proyecto?.subtitulo}
+  </p>
+</div>
           </a>
         )
       })
