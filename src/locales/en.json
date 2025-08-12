@@ -61,19 +61,21 @@
 
   "proyectos": {
     "proyecto1": {
-      "etiqueta": "Institutional website",
-      "name": "Club Atlético Tostado",
-      "subtitulo": "Digitizing the region's sports heartbeat",
-      "p1": "Club Atlético Tostado, the most iconic and largest sports club in the area, lacked a digital presence that matched its prestige. I identified this need and developed a comprehensive solution that transformed how the club connects with its members, players, and community.",
-      "p2": "The project's objectives were to provide centralized information on schedules, activities, and events; enable dynamic publication of club news and updates; and facilitate member interaction through an online space for registration and secure monthly payments.",
-      "p3": "This website not only modernized the club's digital presence but also simplified administrative processes, improved communication with members, and positioned Club Atlético Tostado as a modern and innovative institution in the region.",
-      "li1": "Intuitive and functional interface: Designed for both members and visitors.",
-      "li2": "News system: Quick update of club news, with an adaptable and easy-to-manage structure.",
-      "li3": "Member portal: User registration, membership management, and online payments.",
-      "li4": "Sports schedules and activities: Interactive calendars with information on training, events, and competitions.",
-      "img": "/src/assets/cat.webp",
+      "etiqueta": "Institutional Website",
+      "name": "Club Atletico Tostado",
+      "subtitulo": "Digitalizing the region's sporting heart",
+      "p1": "My goal was to create a digital home for Club Atlético Tostado, the region's most important sports institution, which until then lacked a professional online presence. The project aimed to establish a modern, official communication channel to connect with members and the community.",
+      "p2": "I developed a modern and visually appealing institutional website focused on providing a smooth user experience. Using technologies like Astro and Framer Motion, I created a fast platform with subtle animations that reinforce the club's identity. Currently, the site serves as a central hub of information, presenting news, schedules, and the institution's history.",
+      "p3": "This website established the club's first official digital presence, significantly improving communication and access to information. It provides a solid, scalable foundation for future expansions and has positioned the club as an entity that values modernity and connection with its people.",
+      "caracteristicas": "Current Features",
+      "li1": "Attractive, modern design with fluid animations (Framer Motion).",
+      "li2": "News and updates section to keep the community informed.",
+      "li3": "Centralized information on schedules and sports activities.",
+      "li4": "Fully responsive site optimized for fast performance (Astro).",
+      "img": "/src/assets/tres.webp",
       "imgAlt": "Preview of the Club Atlético Tostado project",
-      "caracteristicas": "Main Features"
+      "github": "https://github.com/IWeppler/AtleticoTostado",
+      "deploy": "https://atleticotostado.vercel.app/"
     },
     "proyecto2": {
       "etiqueta": "Order & Management System",

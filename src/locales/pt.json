@@ -60,20 +60,20 @@
   },
 
   "proyectos": {
-    "proyecto1": {
+    "project1_pt": {
       "etiqueta": "Site Institucional",
-      "name": "Club Atlético Tostado",
+      "name": "Club Atletico Tostado",
       "subtitulo": "Digitalizando o coração esportivo da região",
-      "p1": "O Club Atlético Tostado, o clube esportivo mais icônico e importante da região, não tinha uma presença digital à altura de seu prestígio. Identifiquei essa necessidade e desenvolvi uma solução completa que transformou a forma como o clube se conecta com seus sócios, jogadores e comunidade.",
-      "p2": "Os objetivos do projeto foram: centralizar informações sobre horários, atividades e eventos; permitir a publicação dinâmica de notícias e novidades; e facilitar a interação com os sócios por meio de um espaço online para cadastro e pagamento seguro da mensalidade.",
-      "p3": "Este site não apenas modernizou a presença digital do clube, como também simplificou processos administrativos, melhorou a comunicação com os sócios e posicionou o Club Atlético Tostado como uma instituição moderna e inovadora na região.",
-      "li1": "Interface intuitiva e funcional: Pensada para sócios e visitantes.",
-      "li2": "Sistema de notícias: Atualização rápida com estrutura adaptável e fácil de gerenciar.",
-      "li3": "Portal de sócios: Cadastro de usuários, gestão de mensalidades e pagamentos online.",
-      "li4": "Horários e atividades esportivas: Calendários interativos com treinos, eventos e competições.",
+      "p1": "Meu objetivo foi criar um lar digital para o Club Atlético Tostado, a instituição esportiva mais importante da região, que até então não possuía uma presença online profissional. O projeto buscou estabelecer um canal de comunicação oficial e moderno para se conectar com sócios e a comunidade.",
+      "p2": "Desenvolvi um site institucional moderno e visualmente atraente, focado em oferecer uma experiência de usuário fluida. Utilizando tecnologias como Astro e Framer Motion, criei uma plataforma rápida com animações sutis que reforçam a identidade do clube. Atualmente, o site serve como um ponto central de informações, apresentando notícias, horários e a história da instituição.",
+      "p3": "Este site estabeleceu a primeira presença digital oficial do clube, melhorando significativamente a comunicação e o acesso à informação. Ele fornece uma base sólida e escalável para futuras expansões e posicionou o clube como uma entidade que valoriza a modernidade e a conexão com seu público.",
+      "caracteristicas": "Recursos Atuais",
+      "li1": "Design atraente e moderno com animações fluidas (Framer Motion).",
+      "li2": "Seção de notícias e novidades para manter a comunidade informada.",
+      "li3": "Informações centralizadas sobre horários e atividades esportivas.",
+      "li4": "Página totalmente responsiva e otimizada para um desempenho rápido (Astro).",
       "img": "/src/assets/tres.webp",
-      "imgAlt": "Prévia do projeto Club Atlético Tostado",
-      "caracteristicas": "Características Principais",
+      "imgAlt": "Pré-visualização do projeto Club Atlético Tostado",
       "github": "https://github.com/IWeppler/AtleticoTostado",
       "deploy": "https://atleticotostado.vercel.app/"
     },

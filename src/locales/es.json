@@ -58,22 +58,21 @@
     "title": "Háblame de tu próximo proyecto",
     "name": "Hecho en 2025 por Ignacio Weppler 🤟"
   },
-
   "proyectos": {
     "proyecto1": {
       "etiqueta": "Web Institucional",
       "name": "Club Atletico Tostado",
       "subtitulo": "Digitalizando el corazón deportivo de la región",
-      "p1": "El Club Atlético Tostado, el club más emblemático y grande de la zona, carecía de una presencia digital acorde a su prestigio. Identifiqué esta necesidad y desarrollé una solución integral que transformó la forma en que el club se conecta con sus socios, jugadores y la comunidad.",
-      "p2": "Los objetivos del proyecto fueron; brindar información centralizada sobre horarios, actividades y eventos, permitir la publicación dinámica de noticias y novedades del club, y por último, facilitar la interacción con los socios, ofreciendo un espacio para que puedan registrarse y pagar la mensualidad en línea de manera ágil y segura.",
-      "p3": "Este sitio web no solo modernizó la presencia digital del club, sino que también simplificó procesos administrativos, mejoró la comunicación con los socios y posicionó al Club Atlético Tostado como una institución moderna e innovadora en la región.",
-      "li1": "Interfaz intuitiva y funcional: Pensada tanto para socios como para visitantes.",
-      "li2": "Sistema de noticias: Actualización rápida de novedades...",
-      "li3": "Portal para socios: Registro de usuarios, gestión de membresías y pagos de cuotas online.",
-      "li4": "Horarios y actividades deportivas: Calendarios interactivos con información de entrenamientos, eventos y competiciones.",
+      "p1": "Mi objetivo fue crear un hogar digital para el Club Atlético Tostado, la institución deportiva más importante de la región, que hasta entonces no contaba con una presencia online profesional. El proyecto buscó establecer un canal de comunicación oficial y moderno para conectar con socios y la comunidad.",
+      "p2": "Desarrollé una web institucional moderna y visualmente atractiva, enfocada en ofrecer una experiencia de usuario fluida. Utilizando tecnologías como Astro y Framer Motion, creé una plataforma rápida y con animaciones sutiles que refuerzan la identidad del club. Actualmente, el sitio sirve como un punto central de información, presentando noticias, horarios y la historia de la institución.",
+      "p3": "Este sitio web estableció la primera presencia digital oficial del club, mejorando significativamente la comunicación y el acceso a la información. Proporciona una base sólida y escalable para futuras expansiones y ha posicionado al club como una entidad que valora la modernidad y la conexión con su gente.",
+      "caracteristicas": "Características Actuales",
+      "li1": "Diseño atractivo y moderno con animaciones fluidas (Framer Motion).",
+      "li2": "Sección de noticias y novedades para mantener informada a la comunidad.",
+      "li3": "Información centralizada de horarios y actividades deportivas.",
+      "li4": "Página totalmente responsive y optimizada para un rendimiento veloz (Astro).",
       "img": "/src/assets/tres.webp",
       "imgAlt": "Vista previa del proyecto Club Atlético Tostado",
-      "caracteristicas": "Características Principales",
       "github": "https://github.com/IWeppler/AtleticoTostado",
       "deploy": "https://atleticotostado.vercel.app/"
     },
