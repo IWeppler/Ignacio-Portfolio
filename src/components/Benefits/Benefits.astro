@@ -56,30 +56,29 @@ const langCode = getValidLang(lang);
   </article>
 
   <!-- Script al final para el efecto glow -->
-  <script>
-    if (typeof window !== "undefined") {
-      const group = document.querySelector(
-        "[data-glow-group]"
-      ) as HTMLElement | null;
-      const cards = document.querySelectorAll(
-        "[data-glow]"
-      ) as NodeListOf<HTMLElement>;
+  <script is:inline>
+    function setupGlowEffect() {
+      const group = document.querySelector("[data-glow-group]");
+      const cards = document.querySelectorAll("[data-glow]");
 
-      if (group) {
+      if (group && cards.length > 0) {
+        // Simplemente quitamos la anotación ": MouseEvent"
         group.addEventListener("mousemove", (e) => {
-          const event = e as MouseEvent;
-
           cards.forEach((card) => {
             const rect = card.getBoundingClientRect();
-            const x = ((event.clientX - rect.left) / rect.width) * 100;
-            const y = ((event.clientY - rect.top) / rect.height) * 100;
-            card.style.setProperty("--x", `${x}%`);
-            card.style.setProperty("--y", `${y}%`);
+            if (card instanceof HTMLElement) {
+              const x = ((e.clientX - rect.left) / rect.width) * 100;
+              const y = ((e.clientY - rect.top) / rect.height) * 100;
+              card.style.setProperty("--x", `${x}%`);
+              card.style.setProperty("--y", `${y}%`);
+            }
           });
         });
 
         group.addEventListener("mouseleave", () => {});
       }
     }
+
+    document.addEventListener("astro:page-load", setupGlowEffect);
   </script>
 </section>

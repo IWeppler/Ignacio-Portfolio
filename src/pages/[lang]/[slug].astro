@@ -6,7 +6,8 @@ import { Image } from "astro:assets";
 import { ExternalLink, Github } from "@lucide/astro";
 
 //IMAGENES
-import dos from "../../assets/dos.webp";
+import mockupweb from "../../assets/mockupweb.webp";
+import mockupweb2 from "../../assets/mockupweb2.webp";
 import tres from "../../assets/tres.webp";
 import cuatro from "../../assets/cuatro.webp";
 import mockupnivo1 from "../../assets/mockupnivo1.png";
@@ -72,7 +73,7 @@ type SlugType =
 
 const imageMap = {
   proyecto1: { img1: tres, img2: cuatro },
-  proyecto2: { img1: dos, img2: dos },
+  proyecto2: { img1: mockupweb, img2: mockupweb2 },
   proyecto3: { img1: modulo4henry, img2: modulo4henryb },
   proyecto4: { img1: mockupsos, img2: mockupsos2 },
   proyecto5: { img1: mockupnivo1, img2: mockupnivo2, img3: figmanivo },
@@ -153,7 +154,7 @@ const imagenes = imageMap[typedSlug];
                 class="inline-flex items-center gap-2 px-5 py-2 text-base font-semibold text-white/80 transition-all duration-300 hover:text-white hover:-translate-y-1"
               >
                 <Github class="h-5 w-5" />
-                GitHub
+                Github
               </a>
             )
           }

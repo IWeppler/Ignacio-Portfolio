@@ -1,6 +1,6 @@
 ---
 import mockupsos from "../../assets/mockupsos.png";
-import dos from "../../assets/dos.webp";
+import workmanantial from "../../assets/workmanantial.png";
 import cat from "../../assets/cat.webp";
 import modulo4henry from "../../assets/modulo4henry.webp";
 import mockupnivo1 from "../../assets/mockupnivo1.png";
@@ -17,7 +17,7 @@ const langCode = getValidLang(lang);
 
 const imageMap = {
   proyecto1: cat,
-  proyecto2: dos,
+  proyecto2: workmanantial,
   proyecto3: modulo4henry,
   proyecto4: mockupsos,
   proyecto5: mockupnivo1,
@@ -39,7 +39,7 @@ const proyectos: Record<string, Proyecto> = locale.proyectos;
   style="padding: 8px; padding-bottom: 10rem"
 >
   <div class="mb-6">
-    <h3 class="text-3xl font-bold text-white">{t(langCode, "works.title")}</h2>
+    <h3 class="text-3xl font-bold text-white">{t(langCode, "works.title")}</h3>
   </div>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 p-4">
@@ -47,7 +47,7 @@ const proyectos: Record<string, Proyecto> = locale.proyectos;
       Object.entries(proyectos).map(([slug, proyecto]) => {
         const image = imageMap[slug as keyof typeof imageMap];
         return (
-          <a 
+          <a
             href={`/${langCode}/${slug}`}
             class="relative w-full aspect-[1.2/1] min-h-[327px] rounded-2xl overflow-hidden cursor-pointer group block"
           >
@@ -60,24 +60,24 @@ const proyectos: Record<string, Proyecto> = locale.proyectos;
             </div>
 
             <Image
-                src={image} 
-                alt={`${proyecto.name} - ${proyecto?.subtitulo}`}
-                width={image.width} 
-                height={image.height} 
-                loading="lazy"
-                class="w-full h-full object-cover rounded-2xl group-hover:scale-105 group-hover:blur-xs transition-all duration-400"
-              />
+              src={image}
+              alt={`${proyecto.name} - ${proyecto?.subtitulo}`}
+              width={image.width}
+              height={image.height}
+              loading="lazy"
+              class="w-full h-full object-cover rounded-2xl group-hover:scale-105 group-hover:blur-xs transition-all duration-400"
+            />
 
-<div class="absolute bottom-5 left-5 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-  <h4 class="text-[1.7rem] font-semibold text-[var(--second)] mb-2">
-    {proyecto?.name}
-  </h4>
-  <p class="text-[1.1rem] text-[var(--second)]">
-    {proyecto?.subtitulo}
-  </p>
-</div>
+            <div class="absolute bottom-5 left-5 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <h4 class="text-[1.7rem] font-semibold text-[var(--second)] mb-2">
+                {proyecto?.name}
+              </h4>
+              <p class="text-[1.1rem] text-[var(--second)]">
+                {proyecto?.subtitulo}
+              </p>
+            </div>
           </a>
-        )
+        );
       })
     }
   </div>
