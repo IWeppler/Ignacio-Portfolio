@@ -58,11 +58,10 @@
     "title": "Tell me about your next project",
     "name": "Built in 2025 by Ignacio Weppler 🤟"
   },
-
   "proyectos": {
     "proyecto1": {
       "etiqueta": "Institutional Website",
-      "name": "Club Atletico Tostado",
+      "name": "Club Atlético Tostado",
       "subtitulo": "Digitalizing the region's sporting heart",
       "p1": "My goal was to create a digital home for Club Atlético Tostado, the region's most important sports institution, which until then lacked a professional online presence. The project aimed to establish a modern, official communication channel to connect with members and the community.",
       "p2": "I developed a modern and visually appealing institutional website focused on providing a smooth user experience. Using technologies like Astro and Framer Motion, I created a fast platform with subtle animations that reinforce the club's identity. Currently, the site serves as a central hub of information, presenting news, schedules, and the institution's history.",

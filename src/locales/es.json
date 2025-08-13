@@ -61,7 +61,7 @@
   "proyectos": {
     "proyecto1": {
       "etiqueta": "Web Institucional",
-      "name": "Club Atletico Tostado",
+      "name": "Club Atlético Tostado",
       "subtitulo": "Digitalizando el corazón deportivo de la región",
       "p1": "Mi objetivo fue crear un hogar digital para el Club Atlético Tostado, la institución deportiva más importante de la región, que hasta entonces no contaba con una presencia online profesional. El proyecto buscó establecer un canal de comunicación oficial y moderno para conectar con socios y la comunidad.",
       "p2": "Desarrollé una web institucional moderna y visualmente atractiva, enfocada en ofrecer una experiencia de usuario fluida. Utilizando tecnologías como Astro y Framer Motion, creé una plataforma rápida y con animaciones sutiles que refuerzan la identidad del club. Actualmente, el sitio sirve como un punto central de información, presentando noticias, horarios y la historia de la institución.",
