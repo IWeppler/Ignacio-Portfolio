@@ -76,7 +76,7 @@ h3 {
 .wrapperIcons {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 1.5rem;
+  gap: 1rem;
   justify-items: center;
   margin-top: 7rem;
   width: 100%;
