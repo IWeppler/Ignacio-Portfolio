@@ -27,7 +27,7 @@ Aquí muestro mis proyectos más destacados, tecnologías que utilizo y mi forma
 ## 🖥️ Vista previa
 
 Puedes visitar el portfolio online aquí:  
-🔗 [ignacioweppler.vercel.app](https://ignacioweppler.vercel.app/)
+🔗 [ignacioweppler.com](https://ignacioweppler.com/)
 
 ---
 
@@ -39,7 +39,7 @@ Puedes visitar el portfolio online aquí:
    ```
 
 ##📬 Contacto
-🌎 Web: ignacioweppler.vercel.app
+🌎 Web: ignacioweppler.com
 📧 Email: ignacionweppler@gmail.com
 💼 LinkedIn: linkedin.com/in/ignacioweppler
 

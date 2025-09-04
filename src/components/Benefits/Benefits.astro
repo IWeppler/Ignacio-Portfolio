@@ -56,7 +56,7 @@ const langCode = getValidLang(lang);
   </article>
 
   <!-- Script al final para el efecto glow -->
-  <script is:inline>
+  <script>
     function setupGlowEffect() {
       const group = document.querySelector("[data-glow-group]");
       const cards = document.querySelectorAll("[data-glow]");
@@ -64,11 +64,12 @@ const langCode = getValidLang(lang);
       if (group && cards.length > 0) {
         // Simplemente quitamos la anotación ": MouseEvent"
         group.addEventListener("mousemove", (e) => {
+          const mouseEvent = e as MouseEvent;
           cards.forEach((card) => {
             const rect = card.getBoundingClientRect();
             if (card instanceof HTMLElement) {
-              const x = ((e.clientX - rect.left) / rect.width) * 100;
-              const y = ((e.clientY - rect.top) / rect.height) * 100;
+              const x = ((mouseEvent.clientX - rect.left) / rect.width) * 100;
+              const y = ((mouseEvent.clientY - rect.top) / rect.height) * 100;
               card.style.setProperty("--x", `${x}%`);
               card.style.setProperty("--y", `${y}%`);
             }

@@ -90,12 +90,25 @@ if (!slug || !(slug in locale.proyectos) || !(slug in imageMap)) {
 const typedSlug = slug as SlugType;
 const proyecto = locale.proyectos[typedSlug] as ProjectData;
 const imagenes = imageMap[typedSlug];
+
+const projectSchema = {
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": proyecto.name,
+  "author": {
+    "@type": "Person",
+    "name": "Ignacio Weppler"
+  },
+  "description": proyecto.subtitulo,
+  "image": imagenes.img1.src
+};
 ---
 
 <Layout
-  title={`${proyecto.name} - | Ignacio Weppler`}
+  title={proyecto.name}
   description={proyecto.subtitulo}
-  url={`https://ignacioweppler.vercel.app/${lang}/${slug}`}
+  schema={projectSchema}
+  url={`https://ignacioweppler.com/${lang}/${slug}`}
   image={imagenes.img1.src}
 >
   <Navbar langCode={langCode} />

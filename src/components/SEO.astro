@@ -2,28 +2,58 @@
 const {
   title = "Ignacio Weppler - Desarrollador Web",
   description = "Portfolio de Ignacio Weppler, desarrollador web Full Stack con orientación al Frontend. Experiencia en React, Next.js, Tailwind y Astro.",
-  url = "https://ignacioweppler.vercel.app/",
-  image = "/SEO-ignacio.png",
+  image = "/seoignacio.jpg",
+  schema = null
 } = Astro.props;
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ignacio Weppler",
+  "url": "https://ignacioweppler.com/",
+  "image": new URL(image, Astro.site).href,
+  "sameAs": [
+    "https://www.linkedin.com/in/ignacioweppler",
+    "https://github.com/IWeppler",
+    "https://www.instagram.com/ignacioweppler/",
+  ],
+  "jobTitle": "Desarrollador Web Full Stack",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Ignacio Weppler (Freelance)"
+  }
+};
+
+const schemas = [personSchema];
+if (schema) {
+  schemas.push(schema);
+}
+
+const absoluteImageUrl = new URL(image, Astro.site).href;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
+
+const siteName = "Ignacio Weppler";
+const pageTitle = title === "Ignacio Weppler - Desarrollador Web" ? title : `${title} | ${siteName}`;
 ---
 
-<title>{title}</title>
+<title>{pageTitle}</title>
+<link rel="canonical" href={Astro.url.href} />
+
 <meta name="description" content={description} />
 <meta name="author" content="Ignacio Weppler" />
 <meta name="keywords" content="Ignacio Weppler, Portfolio, Desarrollador Web, Full Stack, Frontend, React, Next.js, Astro, Tailwind" />
 
-<!-- Open Graph -->
-<meta property="og:title" content={title} />
+<meta property="og:title" content={pageTitle} />
 <meta property="og:description" content={description} />
 <meta property="og:type" content="website" />
-<meta property="og:url" content={url} />
-<meta property="og:image" content={image} />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:image" content={absoluteImageUrl} />
+<meta property="og:site_name" content={siteName} />
 
-<!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content={title} />
+<meta name="twitter:title" content={pageTitle} />
 <meta name="twitter:description" content={description} />
-<meta name="twitter:image" content={image} />
+<meta name="twitter:image" content={absoluteImageUrl} />
 
-<!-- Canonical URL -->
-<link rel="canonical" href={Astro.url.href} />
+
+<script type="application/ld+json" set:html={JSON.stringify(schemas)} />

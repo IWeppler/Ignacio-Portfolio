@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 import partytown from '@astrojs/partytown';
 
 export default defineConfig({
-  site: "https://ignacioweppler.vercel.app",
+  site: "https://ignacioweppler.com/",
   integrations: [
     sitemap(),
     partytown({

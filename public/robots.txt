@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ignacioweppler.vercel.app/sitemap.xml
+Sitemap: https://ignacioweppler.com/sitemap.xml
