@@ -1,6 +1,8 @@
 ---
 import styles from "./Navbar.module.css";
 import { t, getValidLang } from '../../utils/i18n';
+// 1. Importamos el ícono que vamos a usar
+import { Globe } from 'lucide-astro';
 
 const { lang } = Astro.params;
 const langCode = getValidLang(lang);
@@ -26,8 +28,8 @@ const projectsUrl = `${homeUrl}#proyectos`;
 const contactUrl = `${homeUrl}#contacto`;
 ---
 
-<header class={styles.navbar}>
-  <nav class={styles.navbar}>
+<header class={styles.navbarContainer}>
+  <nav class={styles.nav}>
     <a href={homeUrl} class={styles.navLink}>{t(langCode, "navbar.link-a")}</a>
     <a href={projectsUrl} class={styles.navLink}>{t(langCode, "navbar.link-b")}</a>
     <a href={contactUrl} class={styles.navLink}>{t(langCode, "navbar.link-c")}</a>
@@ -35,7 +37,9 @@ const contactUrl = `${homeUrl}#contacto`;
 
   <div class={styles.languages}>
     <details class={styles.langDetails}>
-      <summary>{langCode.toUpperCase()}</summary>
+      <summary>
+        <Globe size={20} />
+      </summary>
       <ul class={styles.langDropdown}>
         {supportedLangs.map(lang => (
           <li>

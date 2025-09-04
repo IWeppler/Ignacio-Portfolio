@@ -10,7 +10,7 @@ const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Ignacio Weppler",
-  "url": "https://ignacioweppler.com/",
+  "url": Astro.site.href,
   "image": new URL(image, Astro.site).href,
   "sameAs": [
     "https://www.linkedin.com/in/ignacioweppler",
@@ -37,7 +37,7 @@ const pageTitle = title === "Ignacio Weppler - Desarrollador Web" ? title : `${t
 ---
 
 <title>{pageTitle}</title>
-<link rel="canonical" href={Astro.url.href} />
+<link rel="canonical" href={canonicalUrl} />
 
 <meta name="description" content={description} />
 <meta name="author" content="Ignacio Weppler" />

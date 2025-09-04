@@ -14,9 +14,6 @@ importers:
       '@astrojs/sitemap':
         specifier: ^3.4.1
         version: 3.5.1
-      '@lucide/astro':
-        specifier: ^0.513.0
-        version: 0.513.0(astro@5.13.5(@types/node@24.3.0)(jiti@2.5.1)(lightningcss@1.30.1)(rollup@4.50.0)(typescript@5.9.2))
       '@shikijs/engine-javascript':
         specifier: ^3.4.0
         version: 3.12.2
@@ -38,6 +35,9 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
+      lucide-astro:
+        specifier: ^0.542.0
+        version: 0.542.0(astro@5.13.5(@types/node@24.3.0)(jiti@2.5.1)(lightningcss@1.30.1)(rollup@4.50.0)(typescript@5.9.2))
       sharp:
         specifier: ^0.34.3
         version: 0.34.3
@@ -502,11 +502,6 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.30':
     resolution: {integrity: sha512-GQ7Nw5G2lTu/BtHTKfXhKHok2WGetd4XYcVKGx00SjAk8GMwgJM3zr6zORiPGuOE+/vkc90KtTosSSvaCjKb2Q==}
-
-  '@lucide/astro@0.513.0':
-    resolution: {integrity: sha512-UFXmRjELW8q/Npc0Yfm5Oqer+kPnetbPK39vJ7LcsfHtMCZx2gZG/YNMnjHDhk2QHScClgo8RmQrf8xQZG99dA==}
-    peerDependencies:
-      astro: ^4 || ^5
 
   '@oslojs/encoding@1.1.0':
     resolution: {integrity: sha512-70wQhgYmndg4GCPxPPxPGevRKqTIJ2Nh4OkiMWmDAVYsTQ+Ta7Sq+rPevXyXGdzr30/qZBnyOalCszoMxlyldQ==}
@@ -1270,6 +1265,11 @@ packages:
 
   lru-cache@10.4.3:
     resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
+
+  lucide-astro@0.542.0:
+    resolution: {integrity: sha512-68AwEGCOmYcdShAEgz/AcQhCn9oQJwZOb5OZbwIHJM3AlZOq6B/IIlJyMbVQJJx/sTx3JgsY+iyjNodDvDiaYg==}
+    peerDependencies:
+      astro: '>=2.7.1'
 
   magic-string@0.30.18:
     resolution: {integrity: sha512-yi8swmWbO17qHhwIBNeeZxTceJMeBvWJaId6dyvTSOwTipqeHhMhOrz6513r1sOKnpvQ7zkhlG8tPrpilwTxHQ==}
@@ -2285,10 +2285,6 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@lucide/astro@0.513.0(astro@5.13.5(@types/node@24.3.0)(jiti@2.5.1)(lightningcss@1.30.1)(rollup@4.50.0)(typescript@5.9.2))':
-    dependencies:
-      astro: 5.13.5(@types/node@24.3.0)(jiti@2.5.1)(lightningcss@1.30.1)(rollup@4.50.0)(typescript@5.9.2)
-
   '@oslojs/encoding@1.1.0': {}
 
   '@qwik.dev/partytown@0.11.2':
@@ -3046,6 +3042,10 @@ snapshots:
   longest-streak@3.1.0: {}
 
   lru-cache@10.4.3: {}
+
+  lucide-astro@0.542.0(astro@5.13.5(@types/node@24.3.0)(jiti@2.5.1)(lightningcss@1.30.1)(rollup@4.50.0)(typescript@5.9.2)):
+    dependencies:
+      astro: 5.13.5(@types/node@24.3.0)(jiti@2.5.1)(lightningcss@1.30.1)(rollup@4.50.0)(typescript@5.9.2)
 
   magic-string@0.30.18:
     dependencies:

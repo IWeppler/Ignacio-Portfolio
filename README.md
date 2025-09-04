@@ -41,6 +41,6 @@ Puedes visitar el portfolio online aquí:
 ##📬 Contacto
 🌎 Web: ignacioweppler.com
 📧 Email: ignacionweppler@gmail.com
-💼 LinkedIn: linkedin.com/in/ignacioweppler
+💼 LinkedIn: [linkedin.com/in/ignacioweppler](https://www.linkedin.com/in/ignacioweppler/)
 
 Este proyecto fue creado con ❤️ y dedicación, combinando diseño y funcionalidad para transmitir quién soy como desarrollador.
