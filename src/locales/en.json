@@ -39,7 +39,7 @@
     "desc-ecommerce": "Online tech store",
     "desc-beta": "Platform for online academy",
     "desc-nivo": "Web tool for business management",
-    "desc-courtify": "Court reservation management system"
+    "desc-checancha": "Court reservation management system"
   },
   "benefits": {
     "title": "How I make a difference",
@@ -145,19 +145,21 @@
       "deploy": "https://nivoapp.vercel.app/"
     },
     "proyecto6": {
-      "etiqueta": "Full Stack Project - Soy Henry Bootcamp",
-      "name": "Courtify",
-      "subtitulo": "Court reservation management",
-      "p1": "Courtify is a web application I developed to manage sports court reservations. The goal was to create a platform that made it easy for both users and administrators to book and manage courts.",
-      "p2": "The app includes features like a reservation calendar, user management, notifications, and online payments. I also implemented an authentication system to secure transactions.",
-      "p3": "The design focuses on usability and efficiency, ensuring users can reserve courts quickly and easily.",
-      "li1": "Reservation calendar: Clear view of availability and bookings.",
-      "li2": "User management: User account registration and administration.",
-      "li3": "Notifications: Alerts about bookings and status changes.",
-      "li4": "Online payments: Integration with secure payment gateways.",
-      "img": "/src/assets/courtify.webp",
-      "imgAlt": "Preview of the Courtify project",
-      "caracteristicas": "Main Features"
+      "etiqueta": "SaaS Platform for Sports Complex Management",
+      "name": "CheCancha",
+      "subtitulo": "The SaaS solution that professionalizes court bookings.",
+      "p1": "CheCancha originated as 'Courtify', my capstone project for the Soy Henry Full Stack development bootcamp. The challenge was to build a complete application from scratch, individually, that solved a real and tangible market problem, demonstrating the ability to take an idea from concept to a functional product.",
+      "p2": "I noticed that most local sports complexes relied on informal and chaotic methods to manage their reservations (notebooks, WhatsApp, etc.). My goal was clear: to create a robust digital platform that offered a modern and organized experience, laying the groundwork for what is now the vision of CheCancha.",
+      "p3": "From its inception, the project focused on usability for both the administrator and the end customer. The platform not only optimizes daily management but also opens the door to a scalable business model (SaaS) that can transform the operations of hundreds of sports complexes.",
+      "caracteristicas": "Key Features",
+      "li1": "Intuitive Admin Dashboard: A central control panel with an interactive calendar to manage schedules, confirm bookings, and view real-time court occupancy.",
+      "li2": "Player Self-Management Portal: User profiles with traditional and social sign-in (Google Auth), booking history, and personal data management.",
+      "li3": "Automated Notification System: Transactional emails for booking confirmations, reminders, and changes, reducing no-shows and improving communication.",
+      "li4": "Mercado Pago Payment Integration: A secure payment gateway allowing players to make a deposit or pay the full reservation online, ensuring collection for the complex.",
+      "img": "/src/assets/checancha.webp",
+      "imgAlt": "Preview of the CheCancha project",
+      "github": "https://github.com/IWeppler/Checancha",
+      "deploy": "https://checancha.vercel.app/"
     }
   }
 }

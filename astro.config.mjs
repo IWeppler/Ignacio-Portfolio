@@ -4,16 +4,15 @@ import sitemap from '@astrojs/sitemap';
 
 import partytown from '@astrojs/partytown';
 
+import react from '@astrojs/react';
+
 export default defineConfig({
   site: "https://ignacioweppler.com/",
-  integrations: [
-    sitemap(),
-    partytown({
-      config: {
-        forward: ["gtag"],
-      },
-    }),
-  ],
+  integrations: [sitemap(), partytown({
+    config: {
+      forward: ["gtag"],
+    },
+  }), react()],
   i18n: {
     defaultLocale: 'es',
     locales: ['es', 'en', 'pt'],

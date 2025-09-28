@@ -19,7 +19,7 @@ Aquí muestro mis proyectos más destacados, tecnologías que utilizo y mi forma
 - **Club Atlético Tostado** – Sitio web institucional y portal para socios.
 - **El Trampozo** – Plataforma web promocional con estadísticas para un juego de mesa.
 - **Nivo POS** – Sistema de punto de venta moderno y escalable.
-- **Courtify** – Gestión de reservas para canchas deportivas.
+- **CheCancha** – Plataforma SaaS para la Gestión de Complejos Deportivos.
 - _(y más…)_
 
 ---

@@ -39,7 +39,7 @@
     "desc-ecommerce": "Loja virtual de tecnologia",
     "desc-beta": "Plataforma para academia online",
     "desc-nivo": "Ferramenta web para gestão comercial",
-    "desc-courtify": "Sistema de reservas de quadras esportivas"
+    "desc-checancha": "Sistema de reservas de quadras esportivas"
   },
   "benefits": {
     "title": "Como faço a diferença",
@@ -145,19 +145,21 @@
       "deploy": "https://nivoapp.vercel.app/"
     },
     "proyecto6": {
-      "etiqueta": "Projeto Full Stack - Bootcamp Soy Henry",
-      "name": "Courtify",
-      "subtitulo": "Gestão de reservas de quadras",
-      "p1": "Courtify é um aplicativo web que desenvolvi para gerenciar reservas de quadras esportivas. O objetivo era criar uma plataforma simples e eficaz para usuários e administradores.",
-      "p2": "O app conta com funcionalidades como calendário de reservas, gerenciamento de usuários, notificações e pagamentos online. Também inclui autenticação para garantir segurança nas transações.",
-      "p3": "O design é pensado na usabilidade e eficiência, facilitando a reserva de quadras de forma rápida.",
-      "li1": "Calendário de reservas: Visualização clara de disponibilidade.",
-      "li2": "Gestão de usuários: Cadastro e administração de contas.",
-      "li3": "Notificações: Alertas sobre reservas e alterações.",
-      "li4": "Pagamentos online: Integração com meios de pagamento seguros.",
-      "img": "/src/assets/courtify.webp",
-      "imgAlt": "Prévia do projeto Courtify",
-      "caracteristicas": "Características Principais"
+      "etiqueta": "Plataforma SaaS para Gestão de Complexos Esportivos",
+      "name": "CheCancha",
+      "subtitulo": "A solução SaaS que profissionaliza a reserva de quadras.",
+      "p1": "O CheCancha nasceu como 'Courtify', meu projeto final para o bootcamp de desenvolvimento Full Stack da Soy Henry. O desafio foi construir, de forma individual e do zero, uma aplicação completa que resolvesse um problema real e tangível do mercado, demonstrando a capacidade de levar uma ideia do conceito ao produto funcional.",
+      "p2": "Percebi que a maioria dos complexos esportivos locais dependia de métodos informais e caóticos para gerenciar suas reservas (cadernos, WhatsApp, etc.). Meu objetivo foi claro: criar uma plataforma digital robusta que oferecesse uma experiência moderna e organizada, estabelecendo as bases para a visão atual do CheCancha.",
+      "p3": "Desde sua concepção, o projeto focou na usabilidade tanto para o administrador quanto para o cliente final. A plataforma não só otimiza a gestão diária, mas também abre as portas para um modelo de negócio escalável (SaaS) que pode transformar a operação de centenas de complexos esportivos no país.",
+      "caracteristicas": "Principais Características",
+      "li1": "Painel Administrativo Intuitivo: Um painel de controle central com calendário interativo para gerenciar horários, confirmar reservas e visualizar a ocupação das quadras em tempo real.",
+      "li2": "Portal de Autogestão para Jogadores: Perfis de usuário com registro tradicional e social (Google Auth), histórico de reservas e gerenciamento de dados pessoais.",
+      "li3": "Sistema de Notificações Automatizadas: E-mails transacionais para confirmações de reserva, lembretes e alterações, reduzindo ausências e melhorando a comunicação.",
+      "li4": "Integração de Pagamentos com Mercado Pago: Um gateway de pagamento seguro que permite aos jogadores sinalizar ou pagar o valor total da reserva online, garantindo o recebimento para o complexo.",
+      "img": "/src/assets/checancha.webp",
+      "imgAlt": "Prévia do projeto CheCancha",
+      "github": "https://github.com/IWeppler/Checancha",
+      "deploy": "https://checancha.vercel.app/"
     }
   }
 }

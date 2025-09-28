@@ -10,6 +10,7 @@
   --textColor: #aaabab;
   --second: #fffefe;
   --complementario: #45444419;
+
   --font-main: "Inter", serif;
   --font-second: "Syne", serif;
 
@@ -66,7 +67,6 @@ body {
 /* PAGES */
 .containProject {
   border: 1px solid var(--first);
-  /* position: relative; */
   width: 60%;
   max-width: 800px;
   margin: 8rem auto;
@@ -94,8 +94,9 @@ body {
 }
 
 .titlesProject h1 {
+  font-family: var(--font-second);
   margin: 20px 0;
-  font-size: 36px;
+  font-size: 4rem;
   font-weight: 500;
 }
 

@@ -39,7 +39,7 @@
     "desc-ecommerce": "Tienda online de tecnología",
     "desc-beta": "Aplicación para academia online",
     "desc-nivo": "Herramienta web para gestión comercial",
-    "desc-courtify": "Gestión de reservas de canchas"
+    "desc-checancha": "Plataforma SaaS para la Gestión de Complejos Deportivos"
   },
   "benefits": {
     "title": "Cómo hago la diferencia",
@@ -145,19 +145,21 @@
       "deploy": "https://nivoapp.vercel.app/"
     },
     "proyecto6": {
-      "etiqueta": "Proyecto Full Stack - Bootcamp Soy Henry",
-      "name": "Courtify",
-      "subtitulo": "App web para administrar reservas en una cancha de fútbol 5.",
-      "p1": "Este fue uno de mis proyectos favoritos durante el bootcamp. Lo desarrollé de manera individual y completamente desde cero como entrega del Módulo 3 en el bootcamp Soy Henry.",
-      "p2": "El objetivo era construir una aplicación web completa que resuelva una necesidad concreta: la administración de turnos en una cancha de fútbol 5. Muchas canchas aún gestionan reservas de manera informal, así que desarrollé una plataforma digital que ofrece una experiencia moderna y ordenada tanto para los clientes como para los administradores.",
-      "p3": "El diseño se centra en la usabilidad y la eficiencia, asegurando que los usuarios puedan reservar canchas de manera rápida y sencilla.",
-      "li1": "Calendario de reservas: Visualización clara de disponibilidad y reservas.",
-      "li2": "Gestión de usuarios: Registro y administración de cuentas de usuarios.",
-      "li3": "Notificaciones: Alertas sobre reservas y cambios en el estado.",
-      "li4": "Pagos en línea: Integración con pasarelas de pago seguras.",
-      "img": "/src/assets/courtify.webp",
-      "imgAlt": "Vista previa del proyecto Courtify",
-      "caracteristicas": "Características Principales"
+      "etiqueta": "Plataforma SaaS para la Gestión de Complejos Deportivos",
+      "name": "CheCancha",
+      "subtitulo": "La solución SaaS que profesionaliza la reserva de canchas.",
+      "p1": "CheCancha nació como 'Courtify', un proyecto para el bootcamp de desarrollo Full Stack en Soy Henry. El desafío fue construir, de forma individual y desde cero, una aplicación completa que resolviera un problema real y tangible del mercado, demostrando la capacidad de llevar una idea del concepto al producto funcional.",
+      "p2": "Detecté que la mayoría de los complejos deportivos locales dependían de métodos informales y caóticos para gestionar sus reservas (cuadernos, WhatsApp, etc.). Mi objetivo fue claro: crear una plataforma digital robusta que ofreciera una experiencia moderna y ordenada, sentando las bases para lo que hoy es la visión de CheCancha.",
+      "p3": "Desde su concepción, el proyecto se centró en la usabilidad tanto para el administrador como para el cliente final. La plataforma no solo optimiza la gestión diaria, sino que abre la puerta a un modelo de negocio escalable (SaaS) que puede transformar la operación de cientos de complejos deportivos en el país.",
+      "caracteristicas": "Características Principales",
+      "li1": "Dashboard Administrativo Intuitivo: Un panel de control central con calendario interactivo para gestionar horarios, confirmar reservas y visualizar la ocupación en tiempo real.",
+      "li2": "Portal de Autogestión para Jugadores: Perfiles de usuario con registro tradicional y social (Google Auth), historial de reservas y gestión de datos personales.",
+      "li3": "Sistema de Notificaciones Automatizadas: Mails transaccionales para confirmaciones de reserva, recordatorios y cambios, reduciendo ausencias y mejorando la comunicación.",
+      "li4": "Integración de Pagos con Mercado Pago: Una pasarela segura para que los jugadores puedan señar o pagar el total de la reserva en línea, asegurando el cobro para el complejo.",
+      "img": "/src/assets/checancha.webp",
+      "imgAlt": "Vista previa del proyecto CheCancha",
+      "github": "https://github.com/IWeppler/Checancha",
+      "deploy": "https://checancha.vercel.app/"
     }
   }
 }

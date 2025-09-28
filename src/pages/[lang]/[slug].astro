@@ -2,7 +2,6 @@
 import Layout from "../../layouts/Layout.astro";
 import Navbar from "../../components/Navbar/Navbar.astro";
 import Footer from "../../components/Footer/Footer.astro";
-import { Image } from "astro:assets";
 import { ExternalLink, Github } from "lucide-astro";
 
 //IMAGENES
@@ -15,9 +14,8 @@ import mockupnivo2 from "../../assets/mockupnivo2.png";
 import figmanivo from "../../assets/figmanivo.webp";
 import mockupsos from "../../assets/mockupsos.png";
 import mockupsos2 from "../../assets/mockupsos2.png";
-import courtify from "../../assets/courtify.webp";
-import courtifyb from "../../assets/courtifyb.webp";
-import courtifyc from "../../assets/courtifyc.webp";
+import checanchab from "../../assets/checanchab.webp";
+import checanchac from "../../assets/checanchac.webp";
 import modulo4henry from "../../assets/modulo4henry.webp";
 import modulo4henryb from "../../assets/modulo4henryb.webp";
 
@@ -77,7 +75,7 @@ const imageMap = {
   proyecto3: { img1: modulo4henry, img2: modulo4henryb },
   proyecto4: { img1: mockupsos, img2: mockupsos2 },
   proyecto5: { img1: mockupnivo1, img2: mockupnivo2, img3: figmanivo },
-  proyecto6: { img1: courtify, img2: courtifyb, img3: courtifyc },
+  proyecto6: { img1: checanchab, img2: checanchac },
 };
 
 const locales = { en, es, pt };
@@ -137,9 +135,9 @@ const projectSchema = {
           {proyecto.caracteristicas ?? "Características principales"}
         </h3>
         <ul>
-          <li>- {proyecto.li1}</li>
-          <li>- {proyecto.li2}</li>
-          <li>- {proyecto.li3}</li>
+          <li>- {proyecto.li1}</li><br>
+          <li>- {proyecto.li2}</li><br>
+          <li>- {proyecto.li3}</li><br>
           {proyecto.li4 && <li>- {proyecto.li4}</li>}
         </ul>
         <img

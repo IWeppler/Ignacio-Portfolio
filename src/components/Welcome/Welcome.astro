@@ -1,6 +1,7 @@
 ---
 import styles from "./Welcome.module.css";
 import { t, getValidLang } from "../../utils/i18n";
+import TextPressure from "./TextPressure.tsx";
 
 const { lang } = Astro.params;
 const langCode = getValidLang(lang);
@@ -14,7 +15,13 @@ const langCode = getValidLang(lang);
     </div>
 
     <small>Ignacio Nicolás Weppler</small>
-    <h1>Fullstack Developer</h1>
+    <div class={styles.h1Container}>
+      <TextPressure
+        text="Fullstack Dev"
+        textColor="var(--mainColor)"
+        client:load
+      />
+    </div>
     <div class={styles.containerBtn}>
       <a
         href="https://api.whatsapp.com/send?text=Hola, quiero comenzar con mi proyecto!&phone=+541154702118"
