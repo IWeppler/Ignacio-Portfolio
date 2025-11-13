@@ -80,6 +80,22 @@ body {
   color: var(--second);
 }
 
+.contain-bodyProject h3 {
+    color: white;
+    width: 100%;
+    font-size: 2rem;
+    justify-content: start;
+    text-align: start;
+    margin-bottom: 1rem;
+    margin-top: 1.4rem;
+  }
+
+  .contain-bodyProject ul {
+    width: 98%;
+    justify-content: start;
+    text-align: start;
+  }
+
 .titlesProject {
   padding: 50px;
   border-bottom: 1px solid var(--first);
@@ -241,6 +257,29 @@ body {
   }
   .mainFooter {
     width: 95%;
+  }
+
+  .titlesProject {
+    padding: 2rem;
+  }
+
+  .titlesProject small {
+    font-size: 0.98rem;
+  }
+
+  .titlesProject h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  .contain-bodyProject h3 {
+    color: white;
+    font-size: 1.4rem;
+    width: 100%;;
+    justify-content: start;
+    text-align: start;
+    margin-bottom: 1rem;
+    margin-top: 1.4rem;
   }
 }
 

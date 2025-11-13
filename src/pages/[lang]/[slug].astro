@@ -92,13 +92,13 @@ const imagenes = imageMap[typedSlug];
 const projectSchema = {
   "@context": "https://schema.org",
   "@type": "CreativeWork",
-  "name": proyecto.name,
-  "author": {
+  name: proyecto.name,
+  author: {
     "@type": "Person",
-    "name": "Ignacio Weppler"
+    name: "Ignacio Weppler",
   },
-  "description": proyecto.subtitulo,
-  "image": imagenes.img1.src
+  description: proyecto.subtitulo,
+  image: imagenes.img1.src,
 };
 ---
 
@@ -131,13 +131,13 @@ const projectSchema = {
         />
         <p>{proyecto.p2}</p>
         <br />
-        <h3 class="text-xl justify-start mb-2 text-white">
+        <h3>
           {proyecto.caracteristicas ?? "Características principales"}
         </h3>
         <ul>
-          <li>- {proyecto.li1}</li><br>
-          <li>- {proyecto.li2}</li><br>
-          <li>- {proyecto.li3}</li><br>
+          <li>- {proyecto.li1}</li><br />
+          <li>- {proyecto.li2}</li><br />
+          <li>- {proyecto.li3}</li><br />
           {proyecto.li4 && <li>- {proyecto.li4}</li>}
         </ul>
         <img
@@ -148,14 +148,11 @@ const projectSchema = {
         />
         <p>{proyecto.p3}</p>
 
-
         <div class="h-6"></div>
         <div class="h-6"></div>
 
         <!-- LINKS DE GITHUB Y WEB -->
-        <div
-          class="project-links mt-12 flex flex-wrap gap-4"
-        >
+        <div class="project-links mt-12 flex flex-wrap gap-4">
           {
             proyecto.github && (
               <a
