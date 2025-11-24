@@ -159,7 +159,7 @@
       "img": "/src/assets/checancha.webp",
       "imgAlt": "Vista previa del proyecto CheCancha",
       "github": "https://github.com/IWeppler/Checancha",
-      "deploy": "https://checancha.vercel.app/"
+      "deploy": "https://checancha.com"
     }
   }
 }
