@@ -1,29 +1,29 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import Navbar from "../../components/Navbar/Navbar.astro";
-import Footer from "../../components/Footer/Footer.astro";
+import Layout from "@/layouts/Layout.astro";
+import Navbar from "@/components/Navbar/Navbar.astro";
+import Footer from "@/components/Footer/Footer.astro";
 import { ExternalLink, Github } from "lucide-astro";
 
 //IMAGENES
-import mockupweb from "../../assets/mockupweb.webp";
-import workmanantial1 from "../../assets/workmanantial1.png";
-import tres from "../../assets/tres.webp";
-import cuatro from "../../assets/cuatro.webp";
-import mockupnivo1 from "../../assets/mockupnivo1.png";
-import mockupnivo2 from "../../assets/mockupnivo2.png";
-import figmanivo from "../../assets/figmanivo.webp";
-import mockupsos from "../../assets/mockupsos.png";
-import mockupsos2 from "../../assets/mockupsos2.png";
-import checanchab from "../../assets/checanchab.webp";
-import checanchac from "../../assets/checanchac.webp";
-import modulo4henry from "../../assets/modulo4henry.webp";
-import modulo4henryb from "../../assets/modulo4henryb.webp";
+import mockupweb from "@/assets/mockupweb.webp";
+import workmanantial1 from "@/assets/workmanantial1.png";
+import tres from "@/assets/tres.webp";
+import cuatro from "@/assets/cuatro.webp";
+import mockupnivo1 from "@/assets/mockupnivo1.png";
+import mockupnivo2 from "@/assets/mockupnivo2.png";
+import figmanivo from "@/assets/figmanivo.webp";
+import inmobiliaria1 from "@/assets/inmobiliaria1.png";
+import inmobiliaria2 from "@/assets/inmobiliaria2.png";
+import checanchab from "@/assets/checanchab.webp";
+import checanchac from "@/assets/checanchac.webp";
+import modulo4henry from "@/assets/modulo4henry.webp";
+import modulo4henryb from "@/assets/modulo4henryb.webp";
 
 //i18N
-import { getValidLang, t } from "../../utils/i18n";
-import en from "../../locales/en.json";
-import es from "../../locales/es.json";
-import pt from "../../locales/pt.json";
+import { getValidLang, t } from "@/utils/i18n";
+import en from "@/locales/en.json";
+import es from "@/locales/es.json";
+import pt from "@/locales/pt.json";
 
 export async function getStaticPaths() {
   const slugs = [
@@ -73,7 +73,7 @@ const imageMap = {
   proyecto1: { img1: tres, img2: cuatro },
   proyecto2: { img1: mockupweb, img2: workmanantial1 },
   proyecto3: { img1: modulo4henry, img2: modulo4henryb },
-  proyecto4: { img1: mockupsos, img2: mockupsos2 },
+  proyecto4: { img1: inmobiliaria1, img2: inmobiliaria2 },
   proyecto5: { img1: mockupnivo1, img2: mockupnivo2, img3: figmanivo },
   proyecto6: { img1: checanchab, img2: checanchac },
 };

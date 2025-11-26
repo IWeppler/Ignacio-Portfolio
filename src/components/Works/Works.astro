@@ -1,25 +1,25 @@
 ---
-import mockupsos from "../../assets/mockupsos.png";
-import workmanantial from "../../assets/workmanantial.png";
-import cat from "../../assets/cat.webp";
-import modulo4henry from "../../assets/modulo4henry.webp";
-import mockupnivo1 from "../../assets/mockupnivo1.png";
-import checancha from "../../assets/checancha.webp";
+import inmobiliaria1 from "@/assets/inmobiliaria1.png";
+import workmanantial2 from "@/assets/workmanantial2.png";
+import cat from "@/assets/cat.webp";
+import modulo4henry from "@/assets/modulo4henry.webp";
+import mockupnivo1 from "@/assets/mockupnivo1.png";
+import checancha from "@/assets/checancha.png";
 import { Image } from "astro:assets";
 
-import { t, getValidLang } from "../../utils/i18n";
-import en from "../../locales/en.json";
-import es from "../../locales/es.json";
-import pt from "../../locales/pt.json";
+import { t, getValidLang } from "@/utils/i18n";
+import en from "@/locales/en.json";
+import es from "@/locales/es.json";
+import pt from "@/locales/pt.json";
 
 const { lang } = Astro.params;
 const langCode = getValidLang(lang);
 
 const imageMap = {
   proyecto1: cat,
-  proyecto2: workmanantial,
+  proyecto2: workmanantial2,
   proyecto3: modulo4henry,
-  proyecto4: mockupsos,
+  proyecto4: inmobiliaria1,
   proyecto5: mockupnivo1,
   proyecto6: checancha,
 };
